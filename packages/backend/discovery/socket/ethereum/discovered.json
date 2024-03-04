@@ -1,59 +1,32 @@
 {
   "name": "socket",
   "chain": "ethereum",
-  "blockNumber": 19212794,
-  "configHash": "0xaddfb53a03bd83ee20eda7ad13280da34f286ac8f444b3a5c321febe0565213a",
+  "blockNumber": 19363932,
+  "configHash": "0x8cc1387351d6d9f7a5bf6f3f94509ba731a80f350e48cb62d994c6b69e99d22c",
   "version": 3,
   "contracts": [
     {
-      "name": "PolygonL1Switchboard",
-      "address": "0x053407DFA30267f6332f3c94a9e9F704A55e62CD",
+      "name": "GnosisSafe",
+      "address": "0x07f2a2D9aF175dD108A040c68f0FC308249Af6CA",
       "upgradeability": {
-        "type": "immutable"
+        "type": "gnosis safe",
+        "masterCopy": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+        "modules": []
       },
-      "sinceTimestamp": 1700128991,
+      "implementations": ["0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"],
+      "sinceTimestamp": 1688676359,
       "values": {
-        "capacitor__": "0x994a46a0C07330A30F55C13Bd31Ffe464bA5e26E",
-        "chainSlug": 1,
-        "checkpointManager": "0x86E4Dc95c7FBdBf52e33D563BbDB00823894C287",
-        "fxChildTunnel": "0x0000000000000000000000000000000000000000",
-        "fxRoot": "0xfe5e5D361b2ad62c541bAb87C45a0B9B018389a2",
-        "isGlobalTipped": false,
-        "isInitialized": true,
-        "nominee": "0x0000000000000000000000000000000000000000",
-        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
-        "remoteNativeSwitchboard": "0x72fB18276f3C3c3FD3146F6163994ec02Fa1c9D1",
-        "SEND_MESSAGE_EVENT_SIG": "0x8c5261668696ce22758910d05bab8f186d6eb247ceac2af2e82c7dc17669b036",
-        "signatureVerifier__": "0xf1ABF110d1B6ff0E2e8C05dd64FBF9eBA4d8af98",
-        "socket__": "0x943AC2775928318653e91d350574436A1b9b16f9",
-        "switchboardFees": 2700564286365000,
-        "verificationOverheadFees": 1196689560000
-      },
-      "derivedName": "PolygonL1Switchboard"
-    },
-    {
-      "name": "OptimismSwitchboard2",
-      "address": "0x0E674e057EC0FF97eeA57B6A350DBAAD22FE41BA",
-      "upgradeability": {
-        "type": "immutable"
-      },
-      "sinceTimestamp": 1700136851,
-      "values": {
-        "capacitor__": "0x5E162Be0d9898F35B02D3bF774b45E4C48af1a70",
-        "chainSlug": 1,
-        "crossDomainMessenger__": "0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1",
-        "isGlobalTipped": false,
-        "isInitialized": true,
-        "nominee": "0x0000000000000000000000000000000000000000",
-        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
-        "receiveGasLimit": 300000,
-        "remoteNativeSwitchboard": "0x9Cf7443685827419B0067fb2471C24969EAA716C",
-        "signatureVerifier__": "0xf1ABF110d1B6ff0E2e8C05dd64FBF9eBA4d8af98",
-        "socket__": "0x943AC2775928318653e91d350574436A1b9b16f9",
-        "switchboardFees": 2251544461254000,
-        "verificationOverheadFees": 319607508000
-      },
-      "derivedName": "OptimismSwitchboard"
+        "domainSeparator": "0x1c2534cf88b30aa1ab31501d0ca2fcbef9826686f1bc0120f65f4e92080d6edf",
+        "getChainId": 1,
+        "getOwners": [
+          "0x78e9C458589668f1832A24CfA1837E85bc3698C5",
+          "0xB1b65A44C1Bc4009F94cCC1281611D652ADd4723",
+          "0x35a5D2667A53609c1eA31f05c41b031A10bD1469"
+        ],
+        "getThreshold": 2,
+        "nonce": 34,
+        "VERSION": "1.3.0"
+      }
     },
     {
       "name": "CapacitorFactory",
@@ -70,31 +43,135 @@
       }
     },
     {
-      "name": "OptimismSwitchboard",
-      "address": "0x139f39DC7dC05F7aC2DB3DB6af4f2e1a9De7c287",
+      "name": "MultiSigWalletWithDailyLimit",
+      "address": "0x14C436e9a41A3e8CD365621FAB43B57bba7A39C8",
       "upgradeability": {
         "type": "immutable"
       },
-      "sinceTimestamp": 1700136875,
+      "sinceTimestamp": 1558634570,
       "values": {
-        "capacitor__": "0xBA2CaBf4754745C822c2BDdE65aF836CF92E4354",
-        "chainSlug": 1,
-        "crossDomainMessenger__": "0x5456f02c08e9A018E42C39b351328E5AA864174A",
-        "isGlobalTipped": false,
-        "isInitialized": true,
-        "nominee": "0x0000000000000000000000000000000000000000",
-        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
-        "receiveGasLimit": 300000,
-        "remoteNativeSwitchboard": "0x1D6811553Aff8231aDd04A84F300b89E15D99EA4",
-        "signatureVerifier__": "0xf1ABF110d1B6ff0E2e8C05dd64FBF9eBA4d8af98",
-        "socket__": "0x943AC2775928318653e91d350574436A1b9b16f9",
-        "switchboardFees": 2251544461254000,
-        "verificationOverheadFees": 44002200000
+        "calcMaxWithdraw": 0,
+        "dailyLimit": 0,
+        "getConfirmationCount": [1, 2, 1, 1, 1],
+        "getConfirmations": [
+          ["0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c"],
+          [
+            "0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c",
+            "0x051239dF41e6fA382F278592b20d94a272351218"
+          ],
+          ["0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c"],
+          ["0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c"],
+          ["0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c"]
+        ],
+        "getOwners": [
+          "0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c",
+          "0xaB083097e34D262cf3f0Fa2b68213e79499c16db",
+          "0x6BBbBeAB5EC94e97F670FBcd111b2D09F770B8bF",
+          "0x051239dF41e6fA382F278592b20d94a272351218"
+        ],
+        "isConfirmed": [true, true, true, true, true],
+        "lastDay": 0,
+        "MAX_OWNER_COUNT": 50,
+        "owners": [
+          "0xd1A47ea10AFF6B91256a88Bfd1c496fB191c1f0c",
+          "0xaB083097e34D262cf3f0Fa2b68213e79499c16db",
+          "0x6BBbBeAB5EC94e97F670FBcd111b2D09F770B8bF",
+          "0x051239dF41e6fA382F278592b20d94a272351218"
+        ],
+        "required": 1,
+        "spentToday": 0,
+        "transactionCount": 35,
+        "transactions": [
+          [
+            "0x14C436e9a41A3e8CD365621FAB43B57bba7A39C8",
+            0,
+            "0x7065cb48000000000000000000000000051239df41e6fa382f278592b20d94a272351218",
+            true
+          ],
+          [
+            "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+            0,
+            "0x8e24a7640000000000000000000000000000000000000000000000000000000000989680000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004039313132313265326232653362333765313733323162393330646137313836623363623933643238373934313934343861306339643238663766386237323630000000000000000000000000000000000000000000000000000000000000002233373239415266504a77684c32734c3344596f50314a54514a72664e52674a685971000000000000000000000000000000000000000000000000000000000000",
+            true
+          ],
+          [
+            "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            0,
+            "0x095ea7b3000000000000000000000000e5a5f138005e19a3e6d0fe68b039397eeef2322bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            true
+          ],
+          [
+            "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+            0,
+            "0x8e24a764000000000000000000000000000000000000000000000000000000001d34ce80000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000004064623237613166386337643366643762646637333535663637363064343737353735303737656266633463303930396663333134663537623562653539303835000000000000000000000000000000000000000000000000000000000000002233373239415266504a77684c32734c3344596f50314a54514a72664e52674a685971000000000000000000000000000000000000000000000000000000000000",
+            true
+          ],
+          [
+            "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+            0,
+            "0x321d0f7e0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002233357375534c66375479624531456f5a314e6473547275466e4a6b31346e58685356000000000000000000000000000000000000000000000000000000000000",
+            true
+          ]
+        ]
       },
-      "derivedName": "OptimismSwitchboard"
+      "errors": {
+        "getConfirmationCount": "Too many values. Update configuration to explore fully",
+        "getConfirmations": "Too many values. Update configuration to explore fully",
+        "isConfirmed": "Too many values. Update configuration to explore fully",
+        "transactions": "Too many values. Update configuration to explore fully"
+      }
     },
     {
-      "name": "USDCVaultOwner",
+      "name": "",
+      "address": "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+      "unverified": true,
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1621456910
+    },
+    {
+      "name": "WalletSimple",
+      "address": "0x1FAD1b0F35181B71917409d3841009a2Fdb8acc9",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1691947055,
+      "values": {
+        "getNextSequenceId": 62,
+        "initialized": true,
+        "safeMode": false
+      }
+    },
+    {
+      "name": "WBTC",
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1543095952,
+      "values": {
+        "decimals": 8,
+        "mintingFinished": false,
+        "name": "Wrapped BTC",
+        "owner": "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+        "paused": false,
+        "pendingOwner": "0x0000000000000000000000000000000000000000",
+        "symbol": "WBTC",
+        "totalSupply": 15585605371727
+      }
+    },
+    {
+      "name": "",
+      "address": "0x22AAE22461D2c1dA78b67Ce25b5399e7C8069246",
+      "unverified": true,
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1610127989
+    },
+    {
+      "name": "USDCLyraVaultOwner",
       "address": "0x246d38588b16Dd877c558b245e6D5a711C649fCF",
       "upgradeability": {
         "type": "gnosis safe",
@@ -112,10 +189,190 @@
           "0x4cEa25e9c999E69F45765539783D149024f99F12"
         ],
         "getThreshold": 2,
-        "nonce": 332,
+        "nonce": 333,
         "VERSION": "1.3.0"
       },
       "derivedName": "GnosisSafe"
+    },
+    {
+      "name": "WalletSimple",
+      "address": "0x3011774568E7A8585e0c4F25c293164481f398fB",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1671118367,
+      "values": {
+        "getNextSequenceId": 77,
+        "initialized": true,
+        "safeMode": false
+      }
+    },
+    {
+      "name": "WalletSimple",
+      "address": "0x35a1a9875630c59afFa9EdD67705a25F0283E144",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1687748543,
+      "values": {
+        "getNextSequenceId": 37,
+        "initialized": true,
+        "safeMode": false
+      }
+    },
+    {
+      "name": "Members",
+      "address": "0x3e8640574aa764763291eD733672D3A105107ac5",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1543096000,
+      "values": {
+        "custodian": "0xb0F42D187145911C2aD1755831aDeD125619bd27",
+        "getMerchant": [
+          "0x65b0BF8Ee4947edD2A500D74E50a3d757DC79de0",
+          "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+          "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+          "0xe1F3C653248De6894d683cB2f10DE7CA2253046f",
+          "0x6707A6763c6Dc64DE7C4048A27b6303292F88F50"
+        ],
+        "getMerchants": [
+          "0x65b0BF8Ee4947edD2A500D74E50a3d757DC79de0",
+          "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+          "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+          "0xe1F3C653248De6894d683cB2f10DE7CA2253046f",
+          "0x6707A6763c6Dc64DE7C4048A27b6303292F88F50",
+          "0x9DA79c0b2406617Dd538BAAaBE93d3D633ea20dc",
+          "0x2081eA54366FFCb145Cc1feE30F36aA33A72E778",
+          "0x9bA1014bD2E50f4Fb601Ca178416e76ACa8d2810",
+          "0xB9062896ec3A615a4e4444DF183F0531a77218AE",
+          "0x22AAE22461D2c1dA78b67Ce25b5399e7C8069246",
+          "0x03dC1CCc9559Fb309b56275BE427EBCff0d1766f",
+          "0x14C436e9a41A3e8CD365621FAB43B57bba7A39C8",
+          "0x658545e34E392FE07177e1794504838B49eD261D",
+          "0xa726c00CDa1f60AaaB19BC095D02A46556837f31",
+          "0xA2b1A32CC725d32936E0E81f79F0D41C44cc5cFA",
+          "0x808E4981f6287B13711b78DE9d7C169E5D180643",
+          "0x572F17EcfFf768F9C31881F66BD97B18a651fc20",
+          "0xBC93e897c455B8ef76d981093239775bdd49e5bF",
+          "0xB43D7a63391BC768D5981b0D91152eb76DEE9a6A",
+          "0xcBD12525cDD4Cd76455859eA3da141c412E54F96",
+          "0x18c5fb0518C81510E80d4D350bc3a8778C548d6a",
+          "0x58FCE38e6C5FB4FB11dC00ceBA76B78C759c3A41",
+          "0x9f4d184860315809b0b14A4868149f3Ce2CbdA4f",
+          "0x1619d743d7DC612E99d5D94Ebd6b9695D46f0BF3",
+          "0x2D92460a94767640Ddee25973D58e7482f95abf6",
+          "0x3011774568E7A8585e0c4F25c293164481f398fB",
+          "0x4E055e5C46845a0C984f5AeF5f822ba6B325d2BA",
+          "0xc028C40209904a3f7d11A474d30d8f5C80895681",
+          "0xcbebcc43D64f2586a9A33869D2b7597Bc7aCed96",
+          "0x6Fde81E1aEC2524B338cc3A936F7a00b40b78b03",
+          "0x35a1a9875630c59afFa9EdD67705a25F0283E144",
+          "0xfDB77bd17e045B7068cF2172d95Ce824A24Ed980",
+          "0x07f2a2D9aF175dD108A040c68f0FC308249Af6CA",
+          "0x4d3135BE927ebB4C2Ea296cFE3fc99Fb284EE979",
+          "0x1FAD1b0F35181B71917409d3841009a2Fdb8acc9"
+        ],
+        "owner": "0x4dbbbFb0e68bE9D8F5a377A4654604a62E851e80",
+        "pendingOwner": "0x0000000000000000000000000000000000000000"
+      },
+      "errors": {
+        "getMerchant": "Too many values. Update configuration to explore fully"
+      }
+    },
+    {
+      "name": "WBTC lyra Vault",
+      "address": "0x3Eec7c855aF33280F1eD38b93059F5aa5862E3ab",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1705069499,
+      "values": {
+        "nominee": "0x0000000000000000000000000000000000000000",
+        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
+        "token__": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+      },
+      "derivedName": "Vault"
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "address": "0x4dbbbFb0e68bE9D8F5a377A4654604a62E851e80",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1543304861,
+      "values": {
+        "calcMaxWithdraw": 100,
+        "dailyLimit": 100,
+        "getConfirmationCount": [1, 1, 1, 1, 1],
+        "getConfirmations": [
+          ["0xFDF28Bf25779ED4cA74e958d54653260af604C20"],
+          ["0xFDF28Bf25779ED4cA74e958d54653260af604C20"],
+          ["0xFDF28Bf25779ED4cA74e958d54653260af604C20"],
+          ["0xFDF28Bf25779ED4cA74e958d54653260af604C20"],
+          ["0xFDF28Bf25779ED4cA74e958d54653260af604C20"]
+        ],
+        "getOwners": [
+          "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+          "0xb0F42D187145911C2aD1755831aDeD125619bd27",
+          "0xd5d4aB76e8F22a0FdCeF8F483cC794a74A1a928e",
+          "0xB9062896ec3A615a4e4444DF183F0531a77218AE",
+          "0xddD5105b94A647eEa6776B5A63e37D81eAE3566F",
+          "0x926314B7c2d36871eaf60Afa3D7E8ffc0f4F9A80",
+          "0x51c44979eA04256f678552BE65FAf67f808b3EC0"
+        ],
+        "isConfirmed": [false, false, false, false, false],
+        "lastDay": 1642804796,
+        "MAX_OWNER_COUNT": 50,
+        "owners": [
+          "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+          "0xb0F42D187145911C2aD1755831aDeD125619bd27",
+          "0xd5d4aB76e8F22a0FdCeF8F483cC794a74A1a928e",
+          "0xB9062896ec3A615a4e4444DF183F0531a77218AE",
+          "0xddD5105b94A647eEa6776B5A63e37D81eAE3566F"
+        ],
+        "required": 5,
+        "spentToday": 0,
+        "transactionCount": 118,
+        "transactions": [
+          ["0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7", 0, "0x4e71e0c8", true],
+          ["0x3e8640574aa764763291eD733672D3A105107ac5", 0, "0x4e71e0c8", true],
+          [
+            "0x3e8640574aa764763291eD733672D3A105107ac5",
+            0,
+            "0xbf76c0ef000000000000000000000000bec897d7e4969c59993bfe9ad7b4c571a29aa381",
+            true
+          ],
+          [
+            "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+            0,
+            "0xf2fde38b000000000000000000000000d409db68d0e6e97e1cb1f3eb0bd38de278bc3c68",
+            true
+          ],
+          [
+            "0x3e8640574aa764763291eD733672D3A105107ac5",
+            0,
+            "0xf2fde38b000000000000000000000000d409db68d0e6e97e1cb1f3eb0bd38de278bc3c68",
+            true
+          ]
+        ]
+      },
+      "errors": {
+        "getConfirmationCount": "Too many values. Update configuration to explore fully",
+        "getConfirmations": "Too many values. Update configuration to explore fully",
+        "isConfirmed": "Too many values. Update configuration to explore fully",
+        "owners": "Too many values. Update configuration to explore fully",
+        "transactions": "Too many values. Update configuration to explore fully"
+      }
+    },
+    {
+      "name": "",
+      "address": "0x51c44979eA04256f678552BE65FAf67f808b3EC0",
+      "unverified": true,
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1595618918
     },
     {
       "name": "Hasher",
@@ -130,7 +387,46 @@
       }
     },
     {
-      "name": "USDC Vault",
+      "name": "USDT lyra Vault",
+      "address": "0x5e98A25d8d6FF69A8992d6Aa57948dFB77D4ECBa",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1705566299,
+      "values": {
+        "nominee": "0x0000000000000000000000000000000000000000",
+        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
+        "token__": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+      },
+      "derivedName": "Vault"
+    },
+    {
+      "name": "GnosisSafe",
+      "address": "0x65CE9DC44591d3B35c6c47b0a42bAeB7191A9d11",
+      "upgradeability": {
+        "type": "gnosis safe",
+        "masterCopy": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+        "modules": []
+      },
+      "implementations": ["0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"],
+      "sinceTimestamp": 1653401681,
+      "values": {
+        "domainSeparator": "0x5a5bfceac6f90080b70f7a9cc62a36343b4d9c80c5ebd23f439e6cbbe01c7409",
+        "getChainId": 1,
+        "getOwners": [
+          "0x1A068cf4A717deF9735FE1c867f8867302421697",
+          "0xbae5b1585dEd4d184620f80A858F6118025C3daF",
+          "0xE062e7D123AC8dF480C56147f911144F55C10f88",
+          "0x326377a6B92eC69AcbbFe2De1eB1d7c9008E4C89",
+          "0x0A6c942fA19D83Eb989a9B3CD4A56D682Fff6561"
+        ],
+        "getThreshold": 3,
+        "nonce": 2,
+        "VERSION": "1.3.0"
+      }
+    },
+    {
+      "name": "USDC lyra Vault",
       "address": "0x6D303CEE7959f814042D31E0624fB88Ec6fbcC1d",
       "upgradeability": {
         "type": "immutable"
@@ -138,9 +434,46 @@
       "sinceTimestamp": 1700227943,
       "values": {
         "owner": "0x246d38588b16Dd877c558b245e6D5a711C649fCF",
-        "pendingOwner": "0x0000000000000000000000000000000000000000"
+        "pendingOwner": "0x0000000000000000000000000000000000000000",
+        "token__": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       },
       "derivedName": "Vault"
+    },
+    {
+      "name": "GnosisSafe",
+      "address": "0x86cbD0ce0c087b482782c181dA8d191De18C8275",
+      "upgradeability": {
+        "type": "gnosis safe",
+        "masterCopy": "0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F",
+        "modules": []
+      },
+      "implementations": ["0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F"],
+      "sinceTimestamp": 1628201482,
+      "values": {
+        "domainSeparator": "0xc77b542c71770a2d88336f78558ce4272fe61a62879b8adf342ea020f79619f8",
+        "getModules": [],
+        "getOwners": [
+          "0xaC7B5f4E631b7b5638B9b41d07f1eBED30753f16",
+          "0xE78e3E1668D42FfCa767e22e57d7d249e02B5F0e",
+          "0x5F0D1a3355a75C47324c857280043DdE27797bC0",
+          "0x0a9af7FAba0d5DF7A8C881e1B9cd679ee07Af8A2",
+          "0xfA5bb45895Cb3C0aE5B1583Fe068f009A48F0187",
+          "0x8938bf50d1a3736bdA413510688834540858dAEA"
+        ],
+        "getThreshold": 3,
+        "NAME": "Gnosis Safe",
+        "nonce": 610,
+        "VERSION": "1.1.1"
+      }
+    },
+    {
+      "name": "",
+      "address": "0x926314B7c2d36871eaf60Afa3D7E8ffc0f4F9A80",
+      "unverified": true,
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1595627870
     },
     {
       "name": "Socket",
@@ -153,92 +486,712 @@
         "capacitorFactory__": "0x11Fbb9116801DB54bB51fF4dF423e34E8b45fc9a",
         "chainSlug": 1,
         "executionManager__": "0xFB4dcD94A051a1D2cF3EaF713a2Ef686653884E0",
-        "globalMessageCount": 393,
+        "globalMessageCount": 466,
         "hasher__": "0x5C71beE4a6b0D617D8c3d107D331292741789E27",
-        "inboundSwitchboards": [
-          "0x139f39DC7dC05F7aC2DB3DB6af4f2e1a9De7c287",
-          "0x053407DFA30267f6332f3c94a9e9F704A55e62CD",
-          "0xdf5f7dfDFc26ee5F629949e330bEf56906319CAe",
-          "0x0E674e057EC0FF97eeA57B6A350DBAAD22FE41BA",
-          "0xD5a83a40F262E2247e6566171f9ADc76b745F5cD"
-        ],
         "nominee": "0x0000000000000000000000000000000000000000",
-        "outboundSwitchboards": [
-          "0x139f39DC7dC05F7aC2DB3DB6af4f2e1a9De7c287",
-          "0x053407DFA30267f6332f3c94a9e9F704A55e62CD",
-          "0xdf5f7dfDFc26ee5F629949e330bEf56906319CAe",
-          "0x0E674e057EC0FF97eeA57B6A350DBAAD22FE41BA",
-          "0xD5a83a40F262E2247e6566171f9ADc76b745F5cD"
-        ],
         "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
-        "plugs": [
-          "0x7a6Edde81cdD9d75BC10D87C490b132c08bD426D",
-          "0x200AF8FCdD5246D70B369A98143Ac8930A077B7A",
-          "0x22d8360eB04F46195c7B02A66658C375948d8A99",
-          "0xA621Bc5A9d13D39eb098865B723CEee71BB5C181",
-          "0xceA535B2a0A690ebA76ac6A4AF2A1ee7B9Fed1aa",
-          "0xCf814e58f1649F94d37E51f730D6bF72409fA09c",
-          "0xf71A92D4bEFc2e18671c3b20377d45729790e880",
-          "0x1Eb392Aba52a2D933e58f7E86Ca96b9A3e2D8166",
-          "0x5Afa7ddBcE8EE8862FDf5fD8c546BF32615d2D9B",
-          "0x02D53793b18d032Cd94d745F7586C6F66F83f8e3",
-          "0x3553c0102684c20e2f8192d6F013c7242710b4b3",
-          "0x280D208f0eE2f053A0441099bcBFf298bc8b9444",
-          "0x37091ade7C4E1A914D3155449e25eE91DA08EbE4"
-        ],
         "transmitManager__": "0xeD037aFBffC65a94E9CC592947E851FB2f730341",
         "version": "0x484f1c5889188a0a81068ce8c49d8f7c3b3f1b0c1723b50ebd656a8d4f99e356"
+      },
+      "errors": {
+        "inboundSwitchboards": "bad response (status=413, headers={\"access-control-allow-credentials\":\"true\",\"access-control-allow-headers\":\"Content-Type,Authorization,User-Agent\",\"access-control-allow-methods\":\"GET, POST, OPTIONS\",\"access-control-allow-origin\":\"\",\"content-type\":\"application/json\",\"vary\":\"Accept-Encoding\",\"x-node-id\":\"ethereum_mainnet_sin\",\"date\":\"Mon, 04 Mar 2024 19:36:41 GMT\",\"content-length\":\"103\",\"connection\":\"close\"}, body=\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":119,\\\"error\\\":{\\\"code\\\":-32614,\\\"message\\\":\\\"eth_getLogs is limited to a 10,000 range\\\"}}\", requestBody=\"{\\\"method\\\":\\\"eth_getLogs\\\",\\\"params\\\":[{\\\"fromBlock\\\":\\\"0x0\\\",\\\"toBlock\\\":\\\"0x127785c\\\",\\\"address\\\":\\\"0x943ac2775928318653e91d350574436a1b9b16f9\\\",\\\"topics\\\":[\\\"0xebaba46465001886e6218eb8da227160a320362ee4aab240ead702addafe55ba\\\"]}],\\\"id\\\":119,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://serene-white-patron.quiknode.pro/f3d16427305e89a3321aba613dc01de686b83b5f/\", code=SERVER_ERROR, version=web/5.7.1)",
+        "outboundSwitchboards": "bad response (status=413, headers={\"access-control-allow-credentials\":\"true\",\"access-control-allow-headers\":\"Content-Type,Authorization,User-Agent\",\"access-control-allow-methods\":\"GET, POST, OPTIONS\",\"access-control-allow-origin\":\"\",\"content-type\":\"application/json\",\"vary\":\"Accept-Encoding\",\"x-node-id\":\"ethereum_mainnet_sin\",\"date\":\"Mon, 04 Mar 2024 19:36:41 GMT\",\"content-length\":\"103\",\"connection\":\"close\"}, body=\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":120,\\\"error\\\":{\\\"code\\\":-32614,\\\"message\\\":\\\"eth_getLogs is limited to a 10,000 range\\\"}}\", requestBody=\"{\\\"method\\\":\\\"eth_getLogs\\\",\\\"params\\\":[{\\\"fromBlock\\\":\\\"0x0\\\",\\\"toBlock\\\":\\\"0x127785c\\\",\\\"address\\\":\\\"0x943ac2775928318653e91d350574436a1b9b16f9\\\",\\\"topics\\\":[\\\"0xebaba46465001886e6218eb8da227160a320362ee4aab240ead702addafe55ba\\\"]}],\\\"id\\\":120,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://serene-white-patron.quiknode.pro/f3d16427305e89a3321aba613dc01de686b83b5f/\", code=SERVER_ERROR, version=web/5.7.1)",
+        "plugs": "bad response (status=413, headers={\"access-control-allow-credentials\":\"true\",\"access-control-allow-headers\":\"Content-Type,Authorization,User-Agent\",\"access-control-allow-methods\":\"GET, POST, OPTIONS\",\"access-control-allow-origin\":\"\",\"content-type\":\"application/json\",\"vary\":\"Accept-Encoding\",\"x-node-id\":\"ethereum_mainnet_sin\",\"date\":\"Mon, 04 Mar 2024 19:36:41 GMT\",\"content-length\":\"103\",\"connection\":\"close\"}, body=\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":121,\\\"error\\\":{\\\"code\\\":-32614,\\\"message\\\":\\\"eth_getLogs is limited to a 10,000 range\\\"}}\", requestBody=\"{\\\"method\\\":\\\"eth_getLogs\\\",\\\"params\\\":[{\\\"fromBlock\\\":\\\"0x0\\\",\\\"toBlock\\\":\\\"0x127785c\\\",\\\"address\\\":\\\"0x943ac2775928318653e91d350574436a1b9b16f9\\\",\\\"topics\\\":[\\\"0xebaba46465001886e6218eb8da227160a320362ee4aab240ead702addafe55ba\\\"]}],\\\"id\\\":121,\\\"jsonrpc\\\":\\\"2.0\\\"}\", requestMethod=\"POST\", url=\"https://serene-white-patron.quiknode.pro/f3d16427305e89a3321aba613dc01de686b83b5f/\", code=SERVER_ERROR, version=web/5.7.1)"
       },
       "derivedName": "Socket"
     },
     {
-      "name": "FastSwitchboard",
-      "address": "0xD5a83a40F262E2247e6566171f9ADc76b745F5cD",
+      "name": "FiatTokenV2_2",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       "upgradeability": {
-        "type": "immutable"
+        "type": "ZeppelinOS proxy",
+        "implementation": "0x43506849D7C04F9138D1A2050bbF3A0c054402dd",
+        "admin": "0x807a96288A1A408dBC13DE2b1d087d10356395d2"
       },
-      "sinceTimestamp": 1700128955,
+      "implementations": ["0x43506849D7C04F9138D1A2050bbF3A0c054402dd"],
+      "sinceTimestamp": 1533324504,
       "values": {
-        "accessControl": {
-          "DEFAULT_ADMIN_ROLE": {
-            "adminRole": "DEFAULT_ADMIN_ROLE",
-            "members": []
-          }
-        },
-        "chainSlug": 1,
-        "isGlobalTipped": false,
-        "nominee": "0x0000000000000000000000000000000000000000",
-        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
-        "signatureVerifier__": "0xf1ABF110d1B6ff0E2e8C05dd64FBF9eBA4d8af98",
-        "socket__": "0x943AC2775928318653e91d350574436A1b9b16f9",
-        "timeoutInSeconds": 7200
+        "blacklister": "0x10DF6B6fe66dd319B1f82BaB2d054cbb61cdAD2e",
+        "CANCEL_AUTHORIZATION_TYPEHASH": "0x158b0a9edf7a828aad02f63cd515c68ef2f50ba807396f6d12842833a1597429",
+        "currency": "USD",
+        "decimals": 6,
+        "DOMAIN_SEPARATOR": "0x06c37168a7db5138defc7866392bb87a741f9b3d104deb5094588ce041cae335",
+        "masterMinter": "0xE982615d461DD5cD06575BbeA87624fda4e3de17",
+        "name": "USD Coin",
+        "owner": "0xFcb19e6a322b27c06842A71e8c725399f049AE3a",
+        "paused": false,
+        "pauser": "0x4914f61d25e5C567143774B76EdbF4D5109a8566",
+        "PERMIT_TYPEHASH": "0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9",
+        "RECEIVE_WITH_AUTHORIZATION_TYPEHASH": "0xd099cc98ef71107a616c4f0f941f04c322d8e254fe26b3c6668db87aae413de8",
+        "rescuer": "0x0000000000000000000000000000000000000000",
+        "symbol": "USDC",
+        "totalSupply": "25031225458597442",
+        "TRANSFER_WITH_AUTHORIZATION_TYPEHASH": "0x7c7c6cdb67a18743f49ec6fa9b35f50d52ed05cbed4cc592e13b44501c1a2267",
+        "version": "2"
       },
-      "derivedName": "FastSwitchboard"
+      "errors": {
+        "admin": "Multicall failed",
+        "implementation": "Multicall failed"
+      }
     },
     {
-      "name": "ArbitrumL1Switchboard",
-      "address": "0xdf5f7dfDFc26ee5F629949e330bEf56906319CAe",
+      "name": "",
+      "address": "0xb0F42D187145911C2aD1755831aDeD125619bd27",
+      "unverified": true,
       "upgradeability": {
         "type": "immutable"
       },
-      "sinceTimestamp": 1700129015,
-      "values": {
-        "bridge__": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
-        "capacitor__": "0xf13012498D81bca8a1eE239dC4B52316F31890EE",
-        "chainSlug": 1,
-        "inbox__": "0x4Dbd4fc535Ac27206064B68FfCf827b0A60BAB3f",
-        "isGlobalTipped": false,
-        "isInitialized": true,
-        "nominee": "0x0000000000000000000000000000000000000000",
-        "outbox__": "0x0B9857ae2D4A3DBe74ffE1d7DF045bb7F96E4840",
-        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
-        "remoteNativeSwitchboard": "0xaB2F8c1588ACA57bC2909512B645a860C65770d3",
-        "signatureVerifier__": "0xf1ABF110d1B6ff0E2e8C05dd64FBF9eBA4d8af98",
-        "socket__": "0x943AC2775928318653e91d350574436A1b9b16f9",
-        "switchboardFees": 2458955286249000,
-        "verificationOverheadFees": 55000000000000
+      "sinceTimestamp": 1547160611
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "address": "0xB33f8879d4608711cEBb623F293F8Da13B8A37c5",
+      "upgradeability": {
+        "type": "immutable"
       },
-      "derivedName": "ArbitrumL1Switchboard"
+      "sinceTimestamp": 1668662015,
+      "values": {
+        "calcMaxWithdraw": 0,
+        "dailyLimit": 0,
+        "getConfirmationCount": [8, 8, 8, 8, 0],
+        "getConfirmations": [
+          [
+            "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+            "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+            "0x8180a5CA4E3B94045e05A9313777955f7518D757",
+            "0x4CBbD41a2c057cAb8db00AC60f1AB52F36870185",
+            "0xcBf19D8F01146e3Ec89Aed604485FAbEfA66B268",
+            "0x65CE9DC44591d3B35c6c47b0a42bAeB7191A9d11",
+            "0x86cbD0ce0c087b482782c181dA8d191De18C8275",
+            "0x8B8592E9570E96166336603a1b4bd1E8Db20fa20"
+          ],
+          [
+            "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+            "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+            "0xE71B29B60f60b8fc6dCeC56A16107fc1B919e530",
+            "0x8180a5CA4E3B94045e05A9313777955f7518D757",
+            "0x4CBbD41a2c057cAb8db00AC60f1AB52F36870185",
+            "0xF54cf21835A12c825adbE2cFfF87a08C5aa1D430",
+            "0xcBf19D8F01146e3Ec89Aed604485FAbEfA66B268",
+            "0x86cbD0ce0c087b482782c181dA8d191De18C8275"
+          ],
+          [
+            "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+            "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+            "0xE71B29B60f60b8fc6dCeC56A16107fc1B919e530",
+            "0x8180a5CA4E3B94045e05A9313777955f7518D757",
+            "0xF54cf21835A12c825adbE2cFfF87a08C5aa1D430",
+            "0xcBf19D8F01146e3Ec89Aed604485FAbEfA66B268",
+            "0x86cbD0ce0c087b482782c181dA8d191De18C8275",
+            "0x6707A6763c6Dc64DE7C4048A27b6303292F88F50"
+          ],
+          [
+            "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+            "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+            "0xE71B29B60f60b8fc6dCeC56A16107fc1B919e530",
+            "0x8180a5CA4E3B94045e05A9313777955f7518D757",
+            "0x4CBbD41a2c057cAb8db00AC60f1AB52F36870185",
+            "0xF54cf21835A12c825adbE2cFfF87a08C5aa1D430",
+            "0xcBf19D8F01146e3Ec89Aed604485FAbEfA66B268",
+            "0x86cbD0ce0c087b482782c181dA8d191De18C8275"
+          ],
+          []
+        ],
+        "getOwners": [
+          "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+          "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+          "0xe27B57A99e5CAc0E0f16eE0d5D768126B05422A8",
+          "0xE71B29B60f60b8fc6dCeC56A16107fc1B919e530",
+          "0x8180a5CA4E3B94045e05A9313777955f7518D757",
+          "0x4CBbD41a2c057cAb8db00AC60f1AB52F36870185",
+          "0xa80F73b93526ef992B52E3998bb103a0a8f2359d",
+          "0xF54cf21835A12c825adbE2cFfF87a08C5aa1D430",
+          "0xcBf19D8F01146e3Ec89Aed604485FAbEfA66B268",
+          "0x65CE9DC44591d3B35c6c47b0a42bAeB7191A9d11",
+          "0x86cbD0ce0c087b482782c181dA8d191De18C8275",
+          "0x6707A6763c6Dc64DE7C4048A27b6303292F88F50",
+          "0x8B8592E9570E96166336603a1b4bd1E8Db20fa20"
+        ],
+        "isConfirmed": [true, true, true, true, false],
+        "lastDay": 0,
+        "MAX_OWNER_COUNT": 50,
+        "owners": [
+          "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+          "0x157b1E5ba2302308461f64a8606F2d5970DF129E",
+          "0xe27B57A99e5CAc0E0f16eE0d5D768126B05422A8",
+          "0xE71B29B60f60b8fc6dCeC56A16107fc1B919e530",
+          "0x8180a5CA4E3B94045e05A9313777955f7518D757"
+        ],
+        "required": 8,
+        "spentToday": 0,
+        "transactionCount": 4,
+        "transactions": [
+          ["0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7", 0, "0x4e71e0c8", true],
+          [
+            "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+            0,
+            "0x4ca665400000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c5990000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            true
+          ],
+          [
+            "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+            0,
+            "0x17ffc3200000000000000000000000002260fac5e5542a773aa44fbcfedf7c193bc2c599",
+            true
+          ],
+          [
+            "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            0,
+            "0xa9059cbb000000000000000000000000a1f7bb557c1fe6ded1ee6b1775e5b2d2f7598ae400000000000000000000000000000000000000000000000000000000544d276a",
+            true
+          ],
+          ["0x0000000000000000000000000000000000000000", 0, "0x", false]
+        ]
+      },
+      "errors": {
+        "getConfirmationCount": "Too many values. Update configuration to explore fully",
+        "getConfirmations": "Too many values. Update configuration to explore fully",
+        "isConfirmed": "Too many values. Update configuration to explore fully",
+        "owners": "Too many values. Update configuration to explore fully",
+        "transactions": "Too many values. Update configuration to explore fully"
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "address": "0xB9062896ec3A615a4e4444DF183F0531a77218AE",
+      "upgradeability": {
+        "type": "gnosis safe",
+        "masterCopy": "0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F",
+        "modules": []
+      },
+      "implementations": ["0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F"],
+      "sinceTimestamp": 1595323523,
+      "values": {
+        "domainSeparator": "0xae96e7c517e9ecbf217819ed6e85a34bd675da9883b121259e4b3b91eaaf9a2a",
+        "getModules": [],
+        "getOwners": [
+          "0xD804aB3355a634aEBd45e1252d6208807defD554",
+          "0xa81cF4389f493Fee9FC0fA69510b48D3E2Bfd3ce",
+          "0xB0c9C5B5211dE3a75b61BB798887b76AcCD64193",
+          "0x106fc088aBA908130fBC343F2F6d212Ff36150D1",
+          "0xE7A4F2b1772603170111BC633cbCF1AcEbD60BCe",
+          "0xf6dcD4d7141E06B916987C3C46220f6241278a30"
+        ],
+        "getThreshold": 3,
+        "NAME": "Gnosis Safe",
+        "nonce": 79,
+        "VERSION": "1.1.1"
+      }
+    },
+    {
+      "name": "",
+      "address": "0xBC93e897c455B8ef76d981093239775bdd49e5bF",
+      "unverified": true,
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1589844426
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "address": "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1544705247,
+      "values": {
+        "calcMaxWithdraw": 0,
+        "dailyLimit": 0,
+        "getConfirmationCount": [0, 0, 1, 1, 1],
+        "getConfirmations": [
+          [],
+          [],
+          ["0xC74639017770479C2eDC1e08fE19db76AbCfAF18"],
+          ["0xC74639017770479C2eDC1e08fE19db76AbCfAF18"],
+          ["0xC74639017770479C2eDC1e08fE19db76AbCfAF18"]
+        ],
+        "getOwners": [
+          "0xC74639017770479C2eDC1e08fE19db76AbCfAF18",
+          "0x187318f330E9e6E8a560b44A62577b5FF0E6bC1E"
+        ],
+        "isConfirmed": [false, false, true, true, true],
+        "lastDay": 0,
+        "MAX_OWNER_COUNT": 50,
+        "owners": [
+          "0xC74639017770479C2eDC1e08fE19db76AbCfAF18",
+          "0x187318f330E9e6E8a560b44A62577b5FF0E6bC1E"
+        ],
+        "required": 1,
+        "spentToday": 0,
+        "transactionCount": 21,
+        "transactions": [
+          [
+            "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+            0,
+            "0xe20056e60000000000000000000000001af91fe5c2b67a7e9ad277cc02c9619c76f83fdf0000000000000000000000003040d086c074093d70c6f367f4813ff88b86863f",
+            true
+          ],
+          [
+            "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+            0,
+            "0xe20056e60000000000000000000000003040d086c074093d70c6f367f4813ff88b86863f000000000000000000000000c74639017770479c2edc1e08fe19db76abcfaf18",
+            true
+          ],
+          [
+            "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+            0,
+            "0x321d0f7e00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000022334358484a464b686b4876787269327371736d5364396952766951554a7338355438000000000000000000000000000000000000000000000000000000000000",
+            true
+          ],
+          [
+            "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+            0,
+            "0x095ea7b3000000000000000000000000e5a5f138005e19a3e6d0fe68b039397eeef2322bffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            true
+          ],
+          [
+            "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+            0,
+            "0x8e24a76400000000000000000000000000000000000000000000000000000000000186a0000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000040646262343263303463393561383837393965333239663661336230646466333238653564363937313263316165633737633438336535306135303533663365650000000000000000000000000000000000000000000000000000000000000022334264716a7967333741346b66617a65647863413270596a58666947777278394e75000000000000000000000000000000000000000000000000000000000000",
+            true
+          ]
+        ]
+      },
+      "errors": {
+        "getConfirmationCount": "Too many values. Update configuration to explore fully",
+        "getConfirmations": "Too many values. Update configuration to explore fully",
+        "isConfirmed": "Too many values. Update configuration to explore fully",
+        "transactions": "Too many values. Update configuration to explore fully"
+      }
+    },
+    {
+      "name": "WETH9",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1513077455,
+      "values": {
+        "decimals": 18,
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "totalSupply": "3091180422744079986258691"
+      }
+    },
+    {
+      "name": "MultiSigWallet",
+      "address": "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1505129111,
+      "values": {
+        "getConfirmationCount": [0, 0, 0, 0, 0],
+        "getConfirmations": [[], [], [], [], []],
+        "getOwners": [
+          "0xAC3B242E2E561da9F4cE34746E67d004E6341FA0",
+          "0xEe5207d3c88562fc814496Af0845B34CFD4afc8c",
+          "0x61D5a4d5Bd270e59E9320243e574288e2a199fED",
+          "0x25bB61643e4881147E6aabb65e6DD45CF2904155",
+          "0x4096a34E582664F969753b34dA6E72D55b3C85C1",
+          "0x4D915Dd2c56814BD3Db51a1dA35b302BCC9c8973"
+        ],
+        "isConfirmed": [false, false, false, false, false],
+        "MAX_OWNER_COUNT": 50,
+        "owners": [
+          "0xAC3B242E2E561da9F4cE34746E67d004E6341FA0",
+          "0xEe5207d3c88562fc814496Af0845B34CFD4afc8c",
+          "0x61D5a4d5Bd270e59E9320243e574288e2a199fED",
+          "0x25bB61643e4881147E6aabb65e6DD45CF2904155",
+          "0x4096a34E582664F969753b34dA6E72D55b3C85C1"
+        ],
+        "required": 3,
+        "transactionCount": 2744,
+        "transactions": [
+          [
+            "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+            0,
+            "0x7065cb48000000000000000000000000008c28da422010b6b8a47fdf0b4640297bfeb85b",
+            false
+          ],
+          ["0x008C28DA422010B6b8A47Fdf0B4640297BfEB85B", 0, "0x", true],
+          [
+            "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+            0,
+            "0x7065cb4800000000000000000000000036928500bc1dcd7af6a2b4008875cc336b927d57",
+            true
+          ],
+          [
+            "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+            0,
+            "0xcc872b6600000000000000000000000000000000000000000000000000000002540be400",
+            true
+          ],
+          [
+            "0xd697A61D5FB4e076125e0bE647f902b02bb3A0F1",
+            0,
+            "0xcc872b6600000000000000000000000000000000000000000000000000000002540be400",
+            true
+          ]
+        ]
+      },
+      "errors": {
+        "getConfirmationCount": "Too many values. Update configuration to explore fully",
+        "getConfirmations": "Too many values. Update configuration to explore fully",
+        "isConfirmed": "Too many values. Update configuration to explore fully",
+        "owners": "Too many values. Update configuration to explore fully",
+        "transactions": "Too many values. Update configuration to explore fully"
+      }
+    },
+    {
+      "name": "Controller",
+      "address": "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1543095972,
+      "values": {
+        "factory": "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+        "getWBTC": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "members": "0x3e8640574aa764763291eD733672D3A105107ac5",
+        "owner": "0xB33f8879d4608711cEBb623F293F8Da13B8A37c5",
+        "pendingOwner": "0x0000000000000000000000000000000000000000",
+        "token": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+      }
+    },
+    {
+      "name": "WETH lyra Vault",
+      "address": "0xD4efe33C66B8CdE33B8896a2126E41e5dB571b7e",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1705069895,
+      "values": {
+        "nominee": "0x0000000000000000000000000000000000000000",
+        "owner": "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
+        "token__": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+      },
+      "derivedName": "Vault"
+    },
+    {
+      "name": "TetherToken",
+      "address": "0xd697A61D5FB4e076125e0bE647f902b02bb3A0F1",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1505309109,
+      "values": {
+        "_totalSupply": 110000000000,
+        "basisPointsRate": 0,
+        "decimals": 6,
+        "deprecated": false,
+        "maximumFee": 0,
+        "name": "Tether USD",
+        "owner": "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+        "paused": false,
+        "symbol": "TT$",
+        "totalSupply": 110000000000,
+        "upgradedAddress": "0x0000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "name": "TetherToken",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1511829681,
+      "values": {
+        "_totalSupply": "46005847706828943",
+        "basisPointsRate": 0,
+        "decimals": 6,
+        "deprecated": false,
+        "getOwner": "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+        "MAX_UINT": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "maximumFee": 0,
+        "name": "Tether USD",
+        "owner": "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828",
+        "paused": false,
+        "symbol": "USDT",
+        "totalSupply": "46005847706828943",
+        "upgradedAddress": "0x0000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "address": "0xddD5105b94A647eEa6776B5A63e37D81eAE3566F",
+      "upgradeability": {
+        "type": "gnosis safe",
+        "masterCopy": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+        "modules": []
+      },
+      "implementations": ["0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"],
+      "sinceTimestamp": 1630335047,
+      "values": {
+        "domainSeparator": "0xab90cb901884396e4109f1ad5245c8703237143709d05a3c1c4a6eecf8cfa2ec",
+        "getChainId": 1,
+        "getOwners": [
+          "0x97788A242B6A9B1C4Cb103e8947df03801829BE4",
+          "0x59150a3d034B435327C1A95A116C80F3bE2e4B5E"
+        ],
+        "getThreshold": 1,
+        "nonce": 32,
+        "VERSION": "1.3.0"
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "address": "0xe27B57A99e5CAc0E0f16eE0d5D768126B05422A8",
+      "upgradeability": {
+        "type": "gnosis safe",
+        "masterCopy": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+        "modules": []
+      },
+      "implementations": ["0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"],
+      "sinceTimestamp": 1662106926,
+      "values": {
+        "domainSeparator": "0x82b3a840e30e111d968273d8984bb53ad9cd1bb8854e62a2306155e26313e4b4",
+        "getChainId": 1,
+        "getOwners": [
+          "0xD3b4b39C045C2b2f5c27a8807b29CB813e8818A3",
+          "0x39163c811f56600c10462B1dA1603d73EF6b6cf1",
+          "0xaA8D3349Dc3eE73400D99a4F2Cc4b61670c51675"
+        ],
+        "getThreshold": 2,
+        "nonce": 3,
+        "VERSION": "1.3.0"
+      }
+    },
+    {
+      "name": "Factory",
+      "address": "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1543096014,
+      "values": {
+        "burnRequests": [
+          [
+            "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+            1000000,
+            "3FPunzAzeSqYE8ShL1KKCyiJZQAwrsyWPE",
+            "8e7c2a84f8bb6add0a875fae2292567e5ccbc58fb8bd3ad8afe2f243cd338b85",
+            0,
+            1543336587,
+            2
+          ],
+          [
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            600000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "0611b8af6a64dc54c179d1cf600c6dc3a02de4446c309a220d02236247fda74a",
+            1,
+            1551721144,
+            2
+          ],
+          [
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            600000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "b0a930516a28c8b577e781a9c29bbbf32df13f1cd3441dc23df657d09dae7503",
+            2,
+            1554221366,
+            2
+          ],
+          [
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            500000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "",
+            3,
+            1556490580,
+            2
+          ],
+          [
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            600000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "c53d08c0b9a1d1e998929f71320b35dc24a8411fcf74810839cfff5b092d7af6",
+            4,
+            1558021718,
+            2
+          ]
+        ],
+        "controller": "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+        "getBurnRequest": [
+          [
+            0,
+            "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+            1000000,
+            "3FPunzAzeSqYE8ShL1KKCyiJZQAwrsyWPE",
+            "8e7c2a84f8bb6add0a875fae2292567e5ccbc58fb8bd3ad8afe2f243cd338b85",
+            1543336587,
+            "approved",
+            "0xa78ec06cc1f350982fbd48cfb73a1e7273bfc60807a6090c4e6d0fe6ef5c6f17"
+          ],
+          [
+            1,
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            600000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "0611b8af6a64dc54c179d1cf600c6dc3a02de4446c309a220d02236247fda74a",
+            1551721144,
+            "approved",
+            "0x46512dedebe9dd0fc53227ec2d5d5c795d41c417bb15a510b7a43577291df9e8"
+          ],
+          [
+            2,
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            600000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "b0a930516a28c8b577e781a9c29bbbf32df13f1cd3441dc23df657d09dae7503",
+            1554221366,
+            "approved",
+            "0xebe0827d8564a45153cfa5ed410baab1952c5ee7c4097fddbc00bf94da56ccaf"
+          ],
+          [
+            3,
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            500000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "",
+            1556490580,
+            "approved",
+            "0x70235171dd42e95de11f4446f631c9845b59790772996bf82f275ff323afc17b"
+          ],
+          [
+            4,
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            600000000,
+            "3QS2zmhLYVTKmPewvWs4vze73ecinUM9Hd",
+            "c53d08c0b9a1d1e998929f71320b35dc24a8411fcf74810839cfff5b092d7af6",
+            1558021718,
+            "approved",
+            "0x412deea42b2aeb3941ccac5fb4df28f0733ee987bc60f8c45c922a4375a6512e"
+          ]
+        ],
+        "getBurnRequestsLength": 343,
+        "getMintRequest": [
+          [
+            0,
+            "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+            9000000,
+            "3EyjZ6CtEZEKyc719NZMyWaJpJG5jsVJL1",
+            "d542926e85a98302a1b3af88a88ae55364696f230ea909e45fe20ce0fefe33d1",
+            1543331012,
+            "approved",
+            "0xab7e123c4ec186bd736682075e2a68f22160c2523c6349b7cc584989d7597cdb"
+          ],
+          [
+            1,
+            "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+            100000,
+            "3Bdqjyg37A4kfazedxcA2pYjXfiGwrx9Nu",
+            "dbb42c04c95a88799e329f6a3b0ddf328e5d69712c1aec77c483e50a5053f3ee",
+            1545248159,
+            "canceled",
+            "0x500f039c138170df2f034cfdce4dff065be02e5c957e014b0d816f9b84b73507"
+          ],
+          [
+            2,
+            "0xe1F3C653248De6894d683cB2f10DE7CA2253046f",
+            11150546,
+            "3Bcws8jpfXHiaH46RrjKB3in7wZEWegsX6",
+            "ef582809169d98f783a64b295ad4777f217c76f217e4707b733a1bb77f0b6852",
+            1548496483,
+            "approved",
+            "0x42e468a5b1dea9a2a6f725b0cc216ff584b329788a4a95d9d3b0afac388cad8d"
+          ],
+          [
+            3,
+            "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+            5000000,
+            "3Bdqjyg37A4kfazedxcA2pYjXfiGwrx9Nu",
+            "62b9958316f699d25d2e15ecd60f9c3a3b48dfe2784359ddbdbc22912d53d2c9",
+            1548682223,
+            "approved",
+            "0x7c0ee694908ed0ce847738c1435d93c43d1c8c5ffa1909b00fe2c00f57b93eaf"
+          ],
+          [
+            4,
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            1000000,
+            "3Lto4jAz1aGJQwNSAZ6TEEFuoHoBb8kRc7",
+            "28884caa7927aabd29d1ec70d09747efa7d3c5180eb14761608b5b09dda6c8c2",
+            1548706624,
+            "approved",
+            "0x2432fe6cc5e5906302aee5ef67f10327591af4b1b7027baa291f9b5c8c3acc33"
+          ]
+        ],
+        "getMintRequestsLength": 770,
+        "mintRequests": [
+          [
+            "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+            9000000,
+            "3EyjZ6CtEZEKyc719NZMyWaJpJG5jsVJL1",
+            "d542926e85a98302a1b3af88a88ae55364696f230ea909e45fe20ce0fefe33d1",
+            0,
+            1543331012,
+            2
+          ],
+          [
+            "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+            100000,
+            "3Bdqjyg37A4kfazedxcA2pYjXfiGwrx9Nu",
+            "dbb42c04c95a88799e329f6a3b0ddf328e5d69712c1aec77c483e50a5053f3ee",
+            1,
+            1545248159,
+            1
+          ],
+          [
+            "0xe1F3C653248De6894d683cB2f10DE7CA2253046f",
+            11150546,
+            "3Bcws8jpfXHiaH46RrjKB3in7wZEWegsX6",
+            "ef582809169d98f783a64b295ad4777f217c76f217e4707b733a1bb77f0b6852",
+            2,
+            1548496483,
+            2
+          ],
+          [
+            "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381",
+            5000000,
+            "3Bdqjyg37A4kfazedxcA2pYjXfiGwrx9Nu",
+            "62b9958316f699d25d2e15ecd60f9c3a3b48dfe2784359ddbdbc22912d53d2c9",
+            3,
+            1548682223,
+            2
+          ],
+          [
+            "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+            1000000,
+            "3Lto4jAz1aGJQwNSAZ6TEEFuoHoBb8kRc7",
+            "28884caa7927aabd29d1ec70d09747efa7d3c5180eb14761608b5b09dda6c8c2",
+            4,
+            1548706624,
+            2
+          ]
+        ],
+        "owner": "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7",
+        "pendingOwner": "0x0000000000000000000000000000000000000000"
+      },
+      "errors": {
+        "burnRequests": "Too many values. Update configuration to explore fully",
+        "getBurnRequest": "Too many values. Update configuration to explore fully",
+        "getMintRequest": "Too many values. Update configuration to explore fully",
+        "mintRequests": "Too many values. Update configuration to explore fully"
+      }
+    },
+    {
+      "name": "MasterMinter",
+      "address": "0xE982615d461DD5cD06575BbeA87624fda4e3de17",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1553538530,
+      "values": {
+        "getMinterManager": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "owner": "0xC1d9fe41D19Dd52cb3Ae5d1D3b0030B5D498c704"
+      }
     },
     {
       "name": "TransmitManager",
@@ -281,144 +1234,144 @@
         "signatureVerifier__": "0xf1ABF110d1B6ff0E2e8C05dd64FBF9eBA4d8af98",
         "socket__": "0x943AC2775928318653e91d350574436A1b9b16f9"
       }
+    },
+    {
+      "name": "WalletSimple",
+      "address": "0xfDB77bd17e045B7068cF2172d95Ce824A24Ed980",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1686206603,
+      "values": {
+        "getNextSequenceId": 71,
+        "initialized": true,
+        "safeMode": false
+      }
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "address": "0xFDF28Bf25779ED4cA74e958d54653260af604C20",
+      "upgradeability": {
+        "type": "immutable"
+      },
+      "sinceTimestamp": 1500977290,
+      "values": {
+        "calcMaxWithdraw": 0,
+        "dailyLimit": 0,
+        "getConfirmationCount": [1, 1, 0, 1, 1],
+        "getConfirmations": [
+          ["0xf214dDE57f32F3F34492Ba3148641693058D4A9e"],
+          ["0xc8A1DAb586DEe8a30Cb88C87b8A3614E0a391fC5"],
+          [],
+          ["0xc8A1DAb586DEe8a30Cb88C87b8A3614E0a391fC5"],
+          ["0xc8A1DAb586DEe8a30Cb88C87b8A3614E0a391fC5"]
+        ],
+        "getOwners": [
+          "0xc8A1DAb586DEe8a30Cb88C87b8A3614E0a391fC5",
+          "0xf214dDE57f32F3F34492Ba3148641693058D4A9e",
+          "0x38441a7E52b04a345741D1a9a1031CF718f11E74"
+        ],
+        "isConfirmed": [false, false, false, false, false],
+        "lastDay": 1678683983,
+        "MAX_OWNER_COUNT": 50,
+        "owners": [
+          "0xc8A1DAb586DEe8a30Cb88C87b8A3614E0a391fC5",
+          "0xf214dDE57f32F3F34492Ba3148641693058D4A9e",
+          "0x38441a7E52b04a345741D1a9a1031CF718f11E74"
+        ],
+        "required": 2,
+        "spentToday": 0,
+        "transactionCount": 649,
+        "transactions": [
+          ["0xD9400D7f6790C7c20a441f2e7e2876e4B0F0252c", 10, "0x", true],
+          ["0xD9400D7f6790C7c20a441f2e7e2876e4B0F0252c", 10, "0x", true],
+          ["0xD9400D7f6790C7c20a441f2e7e2876e4B0F0252c", 10, "0x", false],
+          [
+            "0x9c239303ea71C5851748D640d58ccad75Dcc5740",
+            "500000000000000000000",
+            "0x",
+            true
+          ],
+          [
+            "0xD9400D7f6790C7c20a441f2e7e2876e4B0F0252c",
+            "20000000000000000000",
+            "0x",
+            true
+          ]
+        ]
+      },
+      "errors": {
+        "getConfirmationCount": "Too many values. Update configuration to explore fully",
+        "getConfirmations": "Too many values. Update configuration to explore fully",
+        "isConfirmed": "Too many values. Update configuration to explore fully",
+        "transactions": "Too many values. Update configuration to explore fully"
+      }
     }
   ],
   "eoas": [
+    "0x008C28DA422010B6b8A47Fdf0B4640297BfEB85B",
+    "0x03dC1CCc9559Fb309b56275BE427EBCff0d1766f",
+    "0x0a9af7FAba0d5DF7A8C881e1B9cd679ee07Af8A2",
+    "0x10DF6B6fe66dd319B1f82BaB2d054cbb61cdAD2e",
+    "0x1619d743d7DC612E99d5D94Ebd6b9695D46f0BF3",
+    "0x18c5fb0518C81510E80d4D350bc3a8778C548d6a",
+    "0x2081eA54366FFCb145Cc1feE30F36aA33A72E778",
+    "0x25bB61643e4881147E6aabb65e6DD45CF2904155",
+    "0x2D92460a94767640Ddee25973D58e7482f95abf6",
+    "0x35a5D2667A53609c1eA31f05c41b031A10bD1469",
+    "0x4096a34E582664F969753b34dA6E72D55b3C85C1",
+    "0x4914f61d25e5C567143774B76EdbF4D5109a8566",
+    "0x4CBbD41a2c057cAb8db00AC60f1AB52F36870185",
     "0x4cEa25e9c999E69F45765539783D149024f99F12",
+    "0x4d3135BE927ebB4C2Ea296cFE3fc99Fb284EE979",
+    "0x4D915Dd2c56814BD3Db51a1dA35b302BCC9c8973",
+    "0x4E055e5C46845a0C984f5AeF5f822ba6B325d2BA",
+    "0x512fce9B07Ce64590849115EE6B32fd40eC0f5F3",
+    "0x572F17EcfFf768F9C31881F66BD97B18a651fc20",
+    "0x58FCE38e6C5FB4FB11dC00ceBA76B78C759c3A41",
+    "0x5F0D1a3355a75C47324c857280043DdE27797bC0",
     "0x5fD7D0d6b91CC4787Bcb86ca47e0Bd4ea0346d34",
+    "0x61D5a4d5Bd270e59E9320243e574288e2a199fED",
+    "0x658545e34E392FE07177e1794504838B49eD261D",
+    "0x65b0BF8Ee4947edD2A500D74E50a3d757DC79de0",
+    "0x6707A6763c6Dc64DE7C4048A27b6303292F88F50",
+    "0x6Fde81E1aEC2524B338cc3A936F7a00b40b78b03",
     "0x76E6F5C2A64df0F53077602642B79a45D5Ba6D52",
-    "0xb88D64a7E2ec1b137c969Adf2EC65f933d631F65"
+    "0x78e9C458589668f1832A24CfA1837E85bc3698C5",
+    "0x807a96288A1A408dBC13DE2b1d087d10356395d2",
+    "0x808E4981f6287B13711b78DE9d7C169E5D180643",
+    "0x8180a5CA4E3B94045e05A9313777955f7518D757",
+    "0x8938bf50d1a3736bdA413510688834540858dAEA",
+    "0x8B8592E9570E96166336603a1b4bd1E8Db20fa20",
+    "0x9bA1014bD2E50f4Fb601Ca178416e76ACa8d2810",
+    "0x9DA79c0b2406617Dd538BAAaBE93d3D633ea20dc",
+    "0x9f4d184860315809b0b14A4868149f3Ce2CbdA4f",
+    "0xA2b1A32CC725d32936E0E81f79F0D41C44cc5cFA",
+    "0xa726c00CDa1f60AaaB19BC095D02A46556837f31",
+    "0xa80F73b93526ef992B52E3998bb103a0a8f2359d",
+    "0xAC3B242E2E561da9F4cE34746E67d004E6341FA0",
+    "0xaC7B5f4E631b7b5638B9b41d07f1eBED30753f16",
+    "0xB1b65A44C1Bc4009F94cCC1281611D652ADd4723",
+    "0xB43D7a63391BC768D5981b0D91152eb76DEE9a6A",
+    "0xb88D64a7E2ec1b137c969Adf2EC65f933d631F65",
+    "0xc028C40209904a3f7d11A474d30d8f5C80895681",
+    "0xC1d9fe41D19Dd52cb3Ae5d1D3b0030B5D498c704",
+    "0xcBD12525cDD4Cd76455859eA3da141c412E54F96",
+    "0xcbebcc43D64f2586a9A33869D2b7597Bc7aCed96",
+    "0xcBf19D8F01146e3Ec89Aed604485FAbEfA66B268",
+    "0xd5d4aB76e8F22a0FdCeF8F483cC794a74A1a928e",
+    "0xe1F3C653248De6894d683cB2f10DE7CA2253046f",
+    "0xE71B29B60f60b8fc6dCeC56A16107fc1B919e530",
+    "0xE78e3E1668D42FfCa767e22e57d7d249e02B5F0e",
+    "0xEe5207d3c88562fc814496Af0845B34CFD4afc8c",
+    "0xF54cf21835A12c825adbE2cFfF87a08C5aa1D430",
+    "0xfA5bb45895Cb3C0aE5B1583Fe068f009A48F0187",
+    "0xFAF0708D1aEd2566205D61f471d7e4Aeb10910Ea",
+    "0xFcb19e6a322b27c06842A71e8c725399f049AE3a"
   ],
   "abis": {
-    "0x053407DFA30267f6332f3c94a9e9F704A55e62CD": [
-      "constructor(uint32 chainSlug_, address checkpointManager_, address fxRoot_, address owner_, address socket_, address signatureVerifier_)",
-      "error AlreadyInitialized()",
-      "error FeesNotEnough()",
-      "error InvalidNonce()",
-      "error InvalidSender()",
-      "error InvalidTokenAddress()",
-      "error NoPermit(bytes32 role)",
-      "error NoRootFound()",
-      "error OnlyExecutionManager()",
-      "error OnlyNominee()",
-      "error OnlyOwner()",
-      "error UnequalArrayLengths()",
-      "error ZeroAddress()",
-      "event FxChildTunnelSet(address fxChildTunnel, address newFxChildTunnel)",
-      "event GlobalTripChanged(bool isGlobalTipped)",
-      "event InitiatedNativeConfirmation(bytes32 packetId)",
-      "event OwnerClaimed(address indexed claimer)",
-      "event OwnerNominated(address indexed nominee)",
-      "event RoleGranted(bytes32 indexed role, address indexed grantee)",
-      "event RoleRevoked(bytes32 indexed role, address indexed revokee)",
-      "event RootReceived(bytes32 packetId, bytes32 root)",
-      "event SwitchboardFeesSet(uint256 switchboardFees, uint256 verificationOverheadFees)",
-      "event UpdatedRemoteNativeSwitchboard(address remoteNativeSwitchboard)",
-      "function SEND_MESSAGE_EVENT_SIG() view returns (bytes32)",
-      "function allowPacket(bytes32 root_, bytes32 packetId_, uint256, uint32, uint256) view returns (bool)",
-      "function capacitor__() view returns (address)",
-      "function chainSlug() view returns (uint32)",
-      "function checkpointManager() view returns (address)",
-      "function claimOwner()",
-      "function fxChildTunnel() view returns (address)",
-      "function fxRoot() view returns (address)",
-      "function getMinFees(uint32) view returns (uint128 switchboardFee_, uint128 verificationFee_)",
-      "function grantBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function grantRole(bytes32 role_, address grantee_)",
-      "function grantRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function hasRole(bytes32 role_, address address_) view returns (bool)",
-      "function hasRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address address_) view returns (bool)",
-      "function initiateNativeConfirmation(bytes32 packetId_) payable",
-      "function isGlobalTipped() view returns (bool)",
-      "function isInitialized() view returns (bool)",
-      "function nextNonce(address) view returns (uint256)",
-      "function nominateOwner(address nominee_)",
-      "function nominee() view returns (address)",
-      "function owner() view returns (address)",
-      "function packetIdToRoot(bytes32) view returns (bytes32)",
-      "function processedExits(bytes32) view returns (bool)",
-      "function receiveFees(uint32) payable",
-      "function receiveMessage(bytes inputData)",
-      "function receivePacket(bytes32 packetId_, bytes32 root_)",
-      "function registerSiblingSlug(uint32 siblingChainSlug_, uint256 maxPacketLength_, uint256 capacitorType_, uint256 initialPacketCount_, address remoteNativeSwitchboard_)",
-      "function remoteNativeSwitchboard() view returns (address)",
-      "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
-      "function revokeBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function revokeRole(bytes32 role_, address revokee_)",
-      "function revokeRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function setFees(uint256 nonce_, uint32, uint128 switchboardFees_, uint128 verificationOverheadFees_, bytes signature_)",
-      "function setFxChildTunnel(address fxChildTunnel_)",
-      "function signatureVerifier__() view returns (address)",
-      "function socket__() view returns (address)",
-      "function switchboardFees() view returns (uint128)",
-      "function tripGlobal(uint256 nonce_, bytes signature_)",
-      "function unTrip(uint256 nonce_, bytes signature_)",
-      "function updateSibling(uint32 siblingChainSlug_, address remoteNativeSwitchboard_)",
-      "function verificationOverheadFees() view returns (uint128)",
-      "function withdrawFees(address withdrawTo_)"
-    ],
-    "0x0E674e057EC0FF97eeA57B6A350DBAAD22FE41BA": [
-      "constructor(uint32 chainSlug_, uint256 receiveGasLimit_, address owner_, address socket_, address crossDomainMessenger_, address signatureVerifier_)",
-      "error AlreadyInitialized()",
-      "error FeesNotEnough()",
-      "error InvalidNonce()",
-      "error InvalidSender()",
-      "error InvalidTokenAddress()",
-      "error NoPermit(bytes32 role)",
-      "error NoRootFound()",
-      "error OnlyExecutionManager()",
-      "error OnlyNominee()",
-      "error OnlyOwner()",
-      "error UnequalArrayLengths()",
-      "error ZeroAddress()",
-      "event GlobalTripChanged(bool isGlobalTipped)",
-      "event InitiatedNativeConfirmation(bytes32 packetId)",
-      "event OwnerClaimed(address indexed claimer)",
-      "event OwnerNominated(address indexed nominee)",
-      "event RoleGranted(bytes32 indexed role, address indexed grantee)",
-      "event RoleRevoked(bytes32 indexed role, address indexed revokee)",
-      "event RootReceived(bytes32 packetId, bytes32 root)",
-      "event SwitchboardFeesSet(uint256 switchboardFees, uint256 verificationOverheadFees)",
-      "event UpdatedReceiveGasLimit(uint256 receiveGasLimit)",
-      "event UpdatedRemoteNativeSwitchboard(address remoteNativeSwitchboard)",
-      "function allowPacket(bytes32 root_, bytes32 packetId_, uint256, uint32, uint256) view returns (bool)",
-      "function capacitor__() view returns (address)",
-      "function chainSlug() view returns (uint32)",
-      "function claimOwner()",
-      "function crossDomainMessenger__() view returns (address)",
-      "function getMinFees(uint32) view returns (uint128 switchboardFee_, uint128 verificationFee_)",
-      "function grantBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function grantRole(bytes32 role_, address grantee_)",
-      "function grantRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function hasRole(bytes32 role_, address address_) view returns (bool)",
-      "function hasRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address address_) view returns (bool)",
-      "function initiateNativeConfirmation(bytes32 packetId_)",
-      "function isGlobalTipped() view returns (bool)",
-      "function isInitialized() view returns (bool)",
-      "function nextNonce(address) view returns (uint256)",
-      "function nominateOwner(address nominee_)",
-      "function nominee() view returns (address)",
-      "function owner() view returns (address)",
-      "function packetIdToRoot(bytes32) view returns (bytes32)",
-      "function receiveFees(uint32) payable",
-      "function receiveGasLimit() view returns (uint256)",
-      "function receivePacket(bytes32 packetId_, bytes32 root_)",
-      "function registerSiblingSlug(uint32 siblingChainSlug_, uint256 maxPacketLength_, uint256 capacitorType_, uint256 initialPacketCount_, address remoteNativeSwitchboard_)",
-      "function remoteNativeSwitchboard() view returns (address)",
-      "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
-      "function revokeBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function revokeRole(bytes32 role_, address revokee_)",
-      "function revokeRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function setFees(uint256 nonce_, uint32, uint128 switchboardFees_, uint128 verificationOverheadFees_, bytes signature_)",
-      "function signatureVerifier__() view returns (address)",
-      "function socket__() view returns (address)",
-      "function switchboardFees() view returns (uint128)",
-      "function tripGlobal(uint256 nonce_, bytes signature_)",
-      "function unTrip(uint256 nonce_, bytes signature_)",
-      "function updateReceiveGasLimit(uint256 receiveGasLimit_)",
-      "function updateSibling(uint32 siblingChainSlug_, address remoteNativeSwitchboard_)",
-      "function verificationOverheadFees() view returns (uint128)",
-      "function withdrawFees(address withdrawTo_)"
+    "0x07f2a2D9aF175dD108A040c68f0FC308249Af6CA": [
+      "constructor(address _singleton)"
     ],
     "0x11Fbb9116801DB54bB51fF4dF423e34E8b45fc9a": [
       "constructor(address owner_, uint256 maxAllowedPacketLength_)",
@@ -445,71 +1398,359 @@
       "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
       "function revokeRole(bytes32 role_, address revokee_)"
     ],
-    "0x139f39DC7dC05F7aC2DB3DB6af4f2e1a9De7c287": [
-      "constructor(uint32 chainSlug_, uint256 receiveGasLimit_, address owner_, address socket_, address crossDomainMessenger_, address signatureVerifier_)",
-      "error AlreadyInitialized()",
-      "error FeesNotEnough()",
-      "error InvalidNonce()",
-      "error InvalidSender()",
-      "error InvalidTokenAddress()",
-      "error NoPermit(bytes32 role)",
-      "error NoRootFound()",
-      "error OnlyExecutionManager()",
-      "error OnlyNominee()",
-      "error OnlyOwner()",
-      "error UnequalArrayLengths()",
-      "error ZeroAddress()",
-      "event GlobalTripChanged(bool isGlobalTipped)",
-      "event InitiatedNativeConfirmation(bytes32 packetId)",
-      "event OwnerClaimed(address indexed claimer)",
-      "event OwnerNominated(address indexed nominee)",
-      "event RoleGranted(bytes32 indexed role, address indexed grantee)",
-      "event RoleRevoked(bytes32 indexed role, address indexed revokee)",
-      "event RootReceived(bytes32 packetId, bytes32 root)",
-      "event SwitchboardFeesSet(uint256 switchboardFees, uint256 verificationOverheadFees)",
-      "event UpdatedReceiveGasLimit(uint256 receiveGasLimit)",
-      "event UpdatedRemoteNativeSwitchboard(address remoteNativeSwitchboard)",
-      "function allowPacket(bytes32 root_, bytes32 packetId_, uint256, uint32, uint256) view returns (bool)",
-      "function capacitor__() view returns (address)",
-      "function chainSlug() view returns (uint32)",
-      "function claimOwner()",
-      "function crossDomainMessenger__() view returns (address)",
-      "function getMinFees(uint32) view returns (uint128 switchboardFee_, uint128 verificationFee_)",
-      "function grantBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function grantRole(bytes32 role_, address grantee_)",
-      "function grantRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function hasRole(bytes32 role_, address address_) view returns (bool)",
-      "function hasRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address address_) view returns (bool)",
-      "function initiateNativeConfirmation(bytes32 packetId_)",
-      "function isGlobalTipped() view returns (bool)",
-      "function isInitialized() view returns (bool)",
-      "function nextNonce(address) view returns (uint256)",
-      "function nominateOwner(address nominee_)",
-      "function nominee() view returns (address)",
+    "0x14C436e9a41A3e8CD365621FAB43B57bba7A39C8": [
+      "function owners(uint256) view returns (address)",
+      "function removeOwner(address owner)",
+      "function revokeConfirmation(uint256 transactionId)",
+      "function isOwner(address) view returns (bool)",
+      "function confirmations(uint256, address) view returns (bool)",
+      "function calcMaxWithdraw() view returns (uint256)",
+      "function getTransactionCount(bool pending, bool executed) view returns (uint256 count)",
+      "function dailyLimit() view returns (uint256)",
+      "function lastDay() view returns (uint256)",
+      "function addOwner(address owner)",
+      "function isConfirmed(uint256 transactionId) view returns (bool)",
+      "function getConfirmationCount(uint256 transactionId) view returns (uint256 count)",
+      "function transactions(uint256) view returns (address destination, uint256 value, bytes data, bool executed)",
+      "function getOwners() view returns (address[])",
+      "function getTransactionIds(uint256 from, uint256 to, bool pending, bool executed) view returns (uint256[] _transactionIds)",
+      "function getConfirmations(uint256 transactionId) view returns (address[] _confirmations)",
+      "function transactionCount() view returns (uint256)",
+      "function changeRequirement(uint256 _required)",
+      "function confirmTransaction(uint256 transactionId)",
+      "function submitTransaction(address destination, uint256 value, bytes data) returns (uint256 transactionId)",
+      "function changeDailyLimit(uint256 _dailyLimit)",
+      "function MAX_OWNER_COUNT() view returns (uint256)",
+      "function required() view returns (uint256)",
+      "function replaceOwner(address owner, address newOwner)",
+      "function executeTransaction(uint256 transactionId)",
+      "function spentToday() view returns (uint256)",
+      "constructor(address[] _owners, uint256 _required, uint256 _dailyLimit)",
+      "event DailyLimitChange(uint256 dailyLimit)",
+      "event Confirmation(address indexed sender, uint256 indexed transactionId)",
+      "event Revocation(address indexed sender, uint256 indexed transactionId)",
+      "event Submission(uint256 indexed transactionId)",
+      "event Execution(uint256 indexed transactionId)",
+      "event ExecutionFailure(uint256 indexed transactionId)",
+      "event Deposit(address indexed sender, uint256 value)",
+      "event OwnerAddition(address indexed owner)",
+      "event OwnerRemoval(address indexed owner)",
+      "event RequirementChange(uint256 required)"
+    ],
+    "0x1FAD1b0F35181B71917409d3841009a2Fdb8acc9": [
+      "event BatchTransacted(address msgSender, address otherSigner, bytes32 operation)",
+      "event BatchTransfer(address sender, address recipient, uint256 value)",
+      "event Deposited(address from, uint256 value, bytes data)",
+      "event SafeModeActivated(address msgSender)",
+      "event Transacted(address msgSender, address otherSigner, bytes32 operation, address toAddress, uint256 value, bytes data)",
+      "function activateSafeMode()",
+      "function batchFlushERC1155ForwarderTokens(address forwarderAddress, address tokenContractAddress, uint256[] tokenIds)",
+      "function flushERC1155ForwarderTokens(address forwarderAddress, address tokenContractAddress, uint256 tokenId)",
+      "function flushERC721ForwarderTokens(address forwarderAddress, address tokenContractAddress, uint256 tokenId)",
+      "function flushForwarderTokens(address forwarderAddress, address tokenContractAddress)",
+      "function getNextSequenceId() view returns (uint256)",
+      "function init(address[] allowedSigners)",
+      "function initialized() view returns (bool)",
+      "function isSigner(address signer) view returns (bool)",
+      "function onERC1155BatchReceived(address _operator, address _from, uint256[] ids, uint256[] values, bytes data) returns (bytes4)",
+      "function onERC1155Received(address _operator, address _from, uint256 id, uint256 value, bytes data) returns (bytes4)",
+      "function onERC721Received(address _operator, address _from, uint256 _tokenId, bytes _data) returns (bytes4)",
+      "function safeMode() view returns (bool)",
+      "function sendMultiSig(address toAddress, uint256 value, bytes data, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigBatch(address[] recipients, uint256[] values, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigToken(address toAddress, uint256 value, address tokenContractAddress, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function setAutoFlush1155(address forwarderAddress, bool autoFlush)",
+      "function setAutoFlush721(address forwarderAddress, bool autoFlush)",
+      "function signers(address) view returns (bool)",
+      "function supportsInterface(bytes4 interfaceId) view returns (bool)"
+    ],
+    "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599": [
+      "function mintingFinished() view returns (bool)",
+      "function name() view returns (string)",
+      "function approve(address _spender, uint256 _value) returns (bool)",
+      "function reclaimToken(address _token)",
+      "function totalSupply() view returns (uint256)",
+      "function transferFrom(address _from, address _to, uint256 _value) returns (bool)",
+      "function decimals() view returns (uint8)",
+      "function unpause()",
+      "function mint(address _to, uint256 _amount) returns (bool)",
+      "function burn(uint256 value)",
+      "function claimOwnership()",
+      "function paused() view returns (bool)",
+      "function decreaseApproval(address _spender, uint256 _subtractedValue) returns (bool success)",
+      "function balanceOf(address _owner) view returns (uint256)",
+      "function renounceOwnership()",
+      "function finishMinting() returns (bool)",
+      "function pause()",
       "function owner() view returns (address)",
-      "function packetIdToRoot(bytes32) view returns (bytes32)",
-      "function receiveFees(uint32) payable",
-      "function receiveGasLimit() view returns (uint256)",
-      "function receivePacket(bytes32 packetId_, bytes32 root_)",
-      "function registerSiblingSlug(uint32 siblingChainSlug_, uint256 maxPacketLength_, uint256 capacitorType_, uint256 initialPacketCount_, address remoteNativeSwitchboard_)",
-      "function remoteNativeSwitchboard() view returns (address)",
-      "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
-      "function revokeBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function revokeRole(bytes32 role_, address revokee_)",
-      "function revokeRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function setFees(uint256 nonce_, uint32, uint128 switchboardFees_, uint128 verificationOverheadFees_, bytes signature_)",
-      "function signatureVerifier__() view returns (address)",
-      "function socket__() view returns (address)",
-      "function switchboardFees() view returns (uint128)",
-      "function tripGlobal(uint256 nonce_, bytes signature_)",
-      "function unTrip(uint256 nonce_, bytes signature_)",
-      "function updateReceiveGasLimit(uint256 receiveGasLimit_)",
-      "function updateSibling(uint32 siblingChainSlug_, address remoteNativeSwitchboard_)",
-      "function verificationOverheadFees() view returns (uint128)",
-      "function withdrawFees(address withdrawTo_)"
+      "function symbol() view returns (string)",
+      "function transfer(address _to, uint256 _value) returns (bool)",
+      "function increaseApproval(address _spender, uint256 _addedValue) returns (bool success)",
+      "function allowance(address _owner, address _spender) view returns (uint256)",
+      "function pendingOwner() view returns (address)",
+      "function transferOwnership(address newOwner)",
+      "event Pause()",
+      "event Unpause()",
+      "event Burn(address indexed burner, uint256 value)",
+      "event Mint(address indexed to, uint256 amount)",
+      "event MintFinished()",
+      "event OwnershipRenounced(address indexed previousOwner)",
+      "event OwnershipTransferred(address indexed previousOwner, address indexed newOwner)",
+      "event Approval(address indexed owner, address indexed spender, uint256 value)",
+      "event Transfer(address indexed from, address indexed to, uint256 value)"
     ],
     "0x246d38588b16Dd877c558b245e6D5a711C649fCF": [
       "constructor(address _masterCopy)"
+    ],
+    "0x3011774568E7A8585e0c4F25c293164481f398fB": [
+      "event BatchTransacted(address msgSender, address otherSigner, bytes32 operation)",
+      "event BatchTransfer(address sender, address recipient, uint256 value)",
+      "event Deposited(address from, uint256 value, bytes data)",
+      "event SafeModeActivated(address msgSender)",
+      "event Transacted(address msgSender, address otherSigner, bytes32 operation, address toAddress, uint256 value, bytes data)",
+      "function activateSafeMode()",
+      "function flushForwarderTokens(address forwarderAddress, address tokenContractAddress)",
+      "function getNextSequenceId() view returns (uint256)",
+      "function init(address[] allowedSigners)",
+      "function initialized() view returns (bool)",
+      "function isSigner(address signer) view returns (bool)",
+      "function safeMode() view returns (bool)",
+      "function sendMultiSig(address toAddress, uint256 value, bytes data, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigBatch(address[] recipients, uint256[] values, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigToken(address toAddress, uint256 value, address tokenContractAddress, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function signers(address) view returns (bool)"
+    ],
+    "0x34CfAC646f301356fAa8B21e94227e3583Fe3F5F": [
+      "constructor()",
+      "event AddedOwner(address owner)",
+      "event ApproveHash(bytes32 indexed approvedHash, address indexed owner)",
+      "event ChangedMasterCopy(address masterCopy)",
+      "event ChangedThreshold(uint256 threshold)",
+      "event DisabledModule(address module)",
+      "event EnabledModule(address module)",
+      "event ExecutionFailure(bytes32 txHash, uint256 payment)",
+      "event ExecutionFromModuleFailure(address indexed module)",
+      "event ExecutionFromModuleSuccess(address indexed module)",
+      "event ExecutionSuccess(bytes32 txHash, uint256 payment)",
+      "event RemovedOwner(address owner)",
+      "event SignMsg(bytes32 indexed msgHash)",
+      "function NAME() view returns (string)",
+      "function VERSION() view returns (string)",
+      "function addOwnerWithThreshold(address owner, uint256 _threshold)",
+      "function approveHash(bytes32 hashToApprove)",
+      "function approvedHashes(address, bytes32) view returns (uint256)",
+      "function changeMasterCopy(address _masterCopy)",
+      "function changeThreshold(uint256 _threshold)",
+      "function disableModule(address prevModule, address module)",
+      "function domainSeparator() view returns (bytes32)",
+      "function enableModule(address module)",
+      "function encodeTransactionData(address to, uint256 value, bytes data, uint8 operation, uint256 safeTxGas, uint256 baseGas, uint256 gasPrice, address gasToken, address refundReceiver, uint256 _nonce) view returns (bytes)",
+      "function execTransaction(address to, uint256 value, bytes data, uint8 operation, uint256 safeTxGas, uint256 baseGas, uint256 gasPrice, address gasToken, address refundReceiver, bytes signatures) returns (bool success)",
+      "function execTransactionFromModule(address to, uint256 value, bytes data, uint8 operation) returns (bool success)",
+      "function execTransactionFromModuleReturnData(address to, uint256 value, bytes data, uint8 operation) returns (bool success, bytes returnData)",
+      "function getMessageHash(bytes message) view returns (bytes32)",
+      "function getModules() view returns (address[])",
+      "function getModulesPaginated(address start, uint256 pageSize) view returns (address[] array, address next)",
+      "function getOwners() view returns (address[])",
+      "function getThreshold() view returns (uint256)",
+      "function getTransactionHash(address to, uint256 value, bytes data, uint8 operation, uint256 safeTxGas, uint256 baseGas, uint256 gasPrice, address gasToken, address refundReceiver, uint256 _nonce) view returns (bytes32)",
+      "function isOwner(address owner) view returns (bool)",
+      "function isValidSignature(bytes _data, bytes _signature) returns (bytes4)",
+      "function nonce() view returns (uint256)",
+      "function removeOwner(address prevOwner, address owner, uint256 _threshold)",
+      "function requiredTxGas(address to, uint256 value, bytes data, uint8 operation) returns (uint256)",
+      "function setFallbackHandler(address handler)",
+      "function setup(address[] _owners, uint256 _threshold, address to, bytes data, address fallbackHandler, address paymentToken, uint256 payment, address paymentReceiver)",
+      "function signMessage(bytes _data)",
+      "function signedMessages(bytes32) view returns (uint256)",
+      "function swapOwner(address prevOwner, address oldOwner, address newOwner)"
+    ],
+    "0x35a1a9875630c59afFa9EdD67705a25F0283E144": [
+      "event BatchTransacted(address msgSender, address otherSigner, bytes32 operation)",
+      "event BatchTransfer(address sender, address recipient, uint256 value)",
+      "event Deposited(address from, uint256 value, bytes data)",
+      "event SafeModeActivated(address msgSender)",
+      "event Transacted(address msgSender, address otherSigner, bytes32 operation, address toAddress, uint256 value, bytes data)",
+      "function activateSafeMode()",
+      "function flushForwarderTokens(address forwarderAddress, address tokenContractAddress)",
+      "function getNextSequenceId() view returns (uint256)",
+      "function init(address[] allowedSigners)",
+      "function initialized() view returns (bool)",
+      "function isSigner(address signer) view returns (bool)",
+      "function safeMode() view returns (bool)",
+      "function sendMultiSig(address toAddress, uint256 value, bytes data, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigBatch(address[] recipients, uint256[] values, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigToken(address toAddress, uint256 value, address tokenContractAddress, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function signers(address) view returns (bool)"
+    ],
+    "0x3e8640574aa764763291eD733672D3A105107ac5": [
+      "function removeMerchant(address merchant) returns (bool)",
+      "function reclaimToken(address _token)",
+      "function isMerchant(address addr) view returns (bool)",
+      "function isCustodian(address addr) view returns (bool)",
+      "function custodian() view returns (address)",
+      "function setCustodian(address _custodian) returns (bool)",
+      "function claimOwnership()",
+      "function getMerchant(uint256 index) view returns (address)",
+      "function renounceOwnership()",
+      "function owner() view returns (address)",
+      "function addMerchant(address merchant) returns (bool)",
+      "function getMerchants() view returns (address[])",
+      "function pendingOwner() view returns (address)",
+      "function transferOwnership(address newOwner)",
+      "constructor(address _owner)",
+      "event CustodianSet(address indexed custodian)",
+      "event MerchantAdd(address indexed merchant)",
+      "event MerchantRemove(address indexed merchant)",
+      "event OwnershipRenounced(address indexed previousOwner)",
+      "event OwnershipTransferred(address indexed previousOwner, address indexed newOwner)"
+    ],
+    "0x3Eec7c855aF33280F1eD38b93059F5aa5862E3ab": [
+      "constructor(address token_)",
+      "error AmountOutsideLimit()",
+      "error ConnectorUnavailable()",
+      "error InvalidTokenAddress()",
+      "error OnlyNominee()",
+      "error OnlyOwner()",
+      "error ZeroAddress()",
+      "error ZeroAmount()",
+      "event LimitParamsUpdated(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates)",
+      "event OwnerClaimed(address indexed claimer)",
+      "event OwnerNominated(address indexed nominee)",
+      "event PendingTokensTransferred(address connector, address receiver, uint256 unlockedAmount, uint256 pendingAmount)",
+      "event TokensDeposited(address connector, address depositor, address receiver, uint256 depositAmount)",
+      "event TokensPending(address connector, address receiver, uint256 pendingAmount, uint256 totalPendingAmount)",
+      "event TokensUnlocked(address connector, address receiver, uint256 unlockedAmount)",
+      "function claimOwner()",
+      "function connectorPendingUnlocks(address) view returns (uint256)",
+      "function depositToAppChain(address receiver_, uint256 amount_, uint256 msgGasLimit_, address connector_) payable",
+      "function getCurrentLockLimit(address connector_) view returns (uint256)",
+      "function getCurrentUnlockLimit(address connector_) view returns (uint256)",
+      "function getLockLimitParams(address connector_) view returns (tuple(uint256 lastUpdateTimestamp, uint256 ratePerSecond, uint256 maxLimit, uint256 lastUpdateLimit))",
+      "function getMinFees(address connector_, uint256 msgGasLimit_) view returns (uint256 totalFees)",
+      "function getUnlockLimitParams(address connector_) view returns (tuple(uint256 lastUpdateTimestamp, uint256 ratePerSecond, uint256 maxLimit, uint256 lastUpdateLimit))",
+      "function nominateOwner(address nominee_)",
+      "function nominee() view returns (address)",
+      "function owner() view returns (address)",
+      "function pendingUnlocks(address, address) view returns (uint256)",
+      "function receiveInbound(bytes payload_)",
+      "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
+      "function token__() view returns (address)",
+      "function unlockPendingFor(address receiver_, address connector_)",
+      "function updateLimitParams(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates_)"
+    ],
+    "0x43506849D7C04F9138D1A2050bbF3A0c054402dd": [
+      "event Approval(address indexed owner, address indexed spender, uint256 value)",
+      "event AuthorizationCanceled(address indexed authorizer, bytes32 indexed nonce)",
+      "event AuthorizationUsed(address indexed authorizer, bytes32 indexed nonce)",
+      "event Blacklisted(address indexed _account)",
+      "event BlacklisterChanged(address indexed newBlacklister)",
+      "event Burn(address indexed burner, uint256 amount)",
+      "event MasterMinterChanged(address indexed newMasterMinter)",
+      "event Mint(address indexed minter, address indexed to, uint256 amount)",
+      "event MinterConfigured(address indexed minter, uint256 minterAllowedAmount)",
+      "event MinterRemoved(address indexed oldMinter)",
+      "event OwnershipTransferred(address previousOwner, address newOwner)",
+      "event Pause()",
+      "event PauserChanged(address indexed newAddress)",
+      "event RescuerChanged(address indexed newRescuer)",
+      "event Transfer(address indexed from, address indexed to, uint256 value)",
+      "event UnBlacklisted(address indexed _account)",
+      "event Unpause()",
+      "function CANCEL_AUTHORIZATION_TYPEHASH() view returns (bytes32)",
+      "function DOMAIN_SEPARATOR() view returns (bytes32)",
+      "function PERMIT_TYPEHASH() view returns (bytes32)",
+      "function RECEIVE_WITH_AUTHORIZATION_TYPEHASH() view returns (bytes32)",
+      "function TRANSFER_WITH_AUTHORIZATION_TYPEHASH() view returns (bytes32)",
+      "function allowance(address owner, address spender) view returns (uint256)",
+      "function approve(address spender, uint256 value) returns (bool)",
+      "function authorizationState(address authorizer, bytes32 nonce) view returns (bool)",
+      "function balanceOf(address account) view returns (uint256)",
+      "function blacklist(address _account)",
+      "function blacklister() view returns (address)",
+      "function burn(uint256 _amount)",
+      "function cancelAuthorization(address authorizer, bytes32 nonce, uint8 v, bytes32 r, bytes32 s)",
+      "function cancelAuthorization(address authorizer, bytes32 nonce, bytes signature)",
+      "function configureMinter(address minter, uint256 minterAllowedAmount) returns (bool)",
+      "function currency() view returns (string)",
+      "function decimals() view returns (uint8)",
+      "function decreaseAllowance(address spender, uint256 decrement) returns (bool)",
+      "function increaseAllowance(address spender, uint256 increment) returns (bool)",
+      "function initialize(string tokenName, string tokenSymbol, string tokenCurrency, uint8 tokenDecimals, address newMasterMinter, address newPauser, address newBlacklister, address newOwner)",
+      "function initializeV2(string newName)",
+      "function initializeV2_1(address lostAndFound)",
+      "function initializeV2_2(address[] accountsToBlacklist, string newSymbol)",
+      "function isBlacklisted(address _account) view returns (bool)",
+      "function isMinter(address account) view returns (bool)",
+      "function masterMinter() view returns (address)",
+      "function mint(address _to, uint256 _amount) returns (bool)",
+      "function minterAllowance(address minter) view returns (uint256)",
+      "function name() view returns (string)",
+      "function nonces(address owner) view returns (uint256)",
+      "function owner() view returns (address)",
+      "function pause()",
+      "function paused() view returns (bool)",
+      "function pauser() view returns (address)",
+      "function permit(address owner, address spender, uint256 value, uint256 deadline, bytes signature)",
+      "function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s)",
+      "function receiveWithAuthorization(address from, address to, uint256 value, uint256 validAfter, uint256 validBefore, bytes32 nonce, bytes signature)",
+      "function receiveWithAuthorization(address from, address to, uint256 value, uint256 validAfter, uint256 validBefore, bytes32 nonce, uint8 v, bytes32 r, bytes32 s)",
+      "function removeMinter(address minter) returns (bool)",
+      "function rescueERC20(address tokenContract, address to, uint256 amount)",
+      "function rescuer() view returns (address)",
+      "function symbol() view returns (string)",
+      "function totalSupply() view returns (uint256)",
+      "function transfer(address to, uint256 value) returns (bool)",
+      "function transferFrom(address from, address to, uint256 value) returns (bool)",
+      "function transferOwnership(address newOwner)",
+      "function transferWithAuthorization(address from, address to, uint256 value, uint256 validAfter, uint256 validBefore, bytes32 nonce, bytes signature)",
+      "function transferWithAuthorization(address from, address to, uint256 value, uint256 validAfter, uint256 validBefore, bytes32 nonce, uint8 v, bytes32 r, bytes32 s)",
+      "function unBlacklist(address _account)",
+      "function unpause()",
+      "function updateBlacklister(address _newBlacklister)",
+      "function updateMasterMinter(address _newMasterMinter)",
+      "function updatePauser(address _newPauser)",
+      "function updateRescuer(address newRescuer)",
+      "function version() pure returns (string)"
+    ],
+    "0x4dbbbFb0e68bE9D8F5a377A4654604a62E851e80": [
+      "function owners(uint256) view returns (address)",
+      "function removeOwner(address owner)",
+      "function revokeConfirmation(uint256 transactionId)",
+      "function isOwner(address) view returns (bool)",
+      "function confirmations(uint256, address) view returns (bool)",
+      "function calcMaxWithdraw() view returns (uint256)",
+      "function getTransactionCount(bool pending, bool executed) view returns (uint256 count)",
+      "function dailyLimit() view returns (uint256)",
+      "function lastDay() view returns (uint256)",
+      "function addOwner(address owner)",
+      "function isConfirmed(uint256 transactionId) view returns (bool)",
+      "function getConfirmationCount(uint256 transactionId) view returns (uint256 count)",
+      "function transactions(uint256) view returns (address destination, uint256 value, bytes data, bool executed)",
+      "function getOwners() view returns (address[])",
+      "function getTransactionIds(uint256 from, uint256 to, bool pending, bool executed) view returns (uint256[] _transactionIds)",
+      "function getConfirmations(uint256 transactionId) view returns (address[] _confirmations)",
+      "function transactionCount() view returns (uint256)",
+      "function changeRequirement(uint256 _required)",
+      "function confirmTransaction(uint256 transactionId)",
+      "function submitTransaction(address destination, uint256 value, bytes data) returns (uint256 transactionId)",
+      "function changeDailyLimit(uint256 _dailyLimit)",
+      "function MAX_OWNER_COUNT() view returns (uint256)",
+      "function required() view returns (uint256)",
+      "function replaceOwner(address owner, address newOwner)",
+      "function executeTransaction(uint256 transactionId)",
+      "function spentToday() view returns (uint256)",
+      "constructor(address[] _owners, uint256 _required, uint256 _dailyLimit) payable",
+      "event DailyLimitChange(uint256 dailyLimit)",
+      "event Confirmation(address indexed sender, uint256 indexed transactionId)",
+      "event Revocation(address indexed sender, uint256 indexed transactionId)",
+      "event Submission(uint256 indexed transactionId)",
+      "event Execution(uint256 indexed transactionId)",
+      "event ExecutionFailure(uint256 indexed transactionId)",
+      "event Deposit(address indexed sender, uint256 value)",
+      "event OwnerAddition(address indexed owner)",
+      "event OwnerRemoval(address indexed owner)",
+      "event RequirementChange(uint256 required)"
     ],
     "0x5C71beE4a6b0D617D8c3d107D331292741789E27": [
       "constructor(address owner_)",
@@ -531,6 +1772,43 @@
       "function packMessage(uint32 srcChainSlug_, address srcPlug_, uint32 dstChainSlug_, address dstPlug_, tuple(bytes32 msgId, uint256 executionFee, uint256 minMsgGasLimit, bytes32 executionParams, bytes payload) messageDetails_) pure returns (bytes32)",
       "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
       "function revokeRole(bytes32 role_, address revokee_)"
+    ],
+    "0x5e98A25d8d6FF69A8992d6Aa57948dFB77D4ECBa": [
+      "constructor(address token_)",
+      "error AmountOutsideLimit()",
+      "error ConnectorUnavailable()",
+      "error InvalidTokenAddress()",
+      "error OnlyNominee()",
+      "error OnlyOwner()",
+      "error ZeroAddress()",
+      "error ZeroAmount()",
+      "event LimitParamsUpdated(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates)",
+      "event OwnerClaimed(address indexed claimer)",
+      "event OwnerNominated(address indexed nominee)",
+      "event PendingTokensTransferred(address connector, address receiver, uint256 unlockedAmount, uint256 pendingAmount)",
+      "event TokensDeposited(address connector, address depositor, address receiver, uint256 depositAmount)",
+      "event TokensPending(address connector, address receiver, uint256 pendingAmount, uint256 totalPendingAmount)",
+      "event TokensUnlocked(address connector, address receiver, uint256 unlockedAmount)",
+      "function claimOwner()",
+      "function connectorPendingUnlocks(address) view returns (uint256)",
+      "function depositToAppChain(address receiver_, uint256 amount_, uint256 msgGasLimit_, address connector_) payable",
+      "function getCurrentLockLimit(address connector_) view returns (uint256)",
+      "function getCurrentUnlockLimit(address connector_) view returns (uint256)",
+      "function getLockLimitParams(address connector_) view returns (tuple(uint256 lastUpdateTimestamp, uint256 ratePerSecond, uint256 maxLimit, uint256 lastUpdateLimit))",
+      "function getMinFees(address connector_, uint256 msgGasLimit_) view returns (uint256 totalFees)",
+      "function getUnlockLimitParams(address connector_) view returns (tuple(uint256 lastUpdateTimestamp, uint256 ratePerSecond, uint256 maxLimit, uint256 lastUpdateLimit))",
+      "function nominateOwner(address nominee_)",
+      "function nominee() view returns (address)",
+      "function owner() view returns (address)",
+      "function pendingUnlocks(address, address) view returns (uint256)",
+      "function receiveInbound(bytes payload_)",
+      "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
+      "function token__() view returns (address)",
+      "function unlockPendingFor(address receiver_, address connector_)",
+      "function updateLimitParams(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates_)"
+    ],
+    "0x65CE9DC44591d3B35c6c47b0a42bAeB7191A9d11": [
+      "constructor(address _singleton)"
     ],
     "0x6D303CEE7959f814042D31E0624fB88Ec6fbcC1d": [
       "constructor(address token_)",
@@ -564,6 +1842,9 @@
       "function transferOwnership(address newOwner)",
       "function unlockPendingFor(address receiver_, address connector_)",
       "function updateLimitParams(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates_)"
+    ],
+    "0x86cbD0ce0c087b482782c181dA8d191De18C8275": [
+      "constructor(address _masterCopy)"
     ],
     "0x943AC2775928318653e91d350574436A1b9b16f9": [
       "constructor(uint32 chainSlug_, address hasher_, address capacitorFactory_, address owner_, string version_)",
@@ -643,74 +1924,247 @@
       "function useSiblingSwitchboard(uint32 siblingChainSlug_, address siblingSwitchboard_)",
       "function version() view returns (bytes32)"
     ],
-    "0xD5a83a40F262E2247e6566171f9ADc76b745F5cD": [
-      "constructor(address owner_, address socket_, uint32 chainSlug_, uint256 timeoutInSeconds_, address signatureVerifier_)",
-      "error AlreadyAttested()",
-      "error InvalidNonce()",
-      "error InvalidRole()",
-      "error InvalidRoot()",
+    "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": [
+      "function upgradeTo(address newImplementation)",
+      "function upgradeToAndCall(address newImplementation, bytes data) payable",
+      "function implementation() view returns (address)",
+      "function changeAdmin(address newAdmin)",
+      "function admin() view returns (address)",
+      "constructor(address _implementation)",
+      "event AdminChanged(address previousAdmin, address newAdmin)",
+      "event Upgraded(address implementation)"
+    ],
+    "0xB33f8879d4608711cEBb623F293F8Da13B8A37c5": [
+      "function owners(uint256) view returns (address)",
+      "function removeOwner(address owner)",
+      "function revokeConfirmation(uint256 transactionId)",
+      "function isOwner(address) view returns (bool)",
+      "function confirmations(uint256, address) view returns (bool)",
+      "function calcMaxWithdraw() view returns (uint256)",
+      "function getTransactionCount(bool pending, bool executed) view returns (uint256 count)",
+      "function dailyLimit() view returns (uint256)",
+      "function lastDay() view returns (uint256)",
+      "function addOwner(address owner)",
+      "function isConfirmed(uint256 transactionId) view returns (bool)",
+      "function getConfirmationCount(uint256 transactionId) view returns (uint256 count)",
+      "function transactions(uint256) view returns (address destination, uint256 value, bytes data, bool executed)",
+      "function getOwners() view returns (address[])",
+      "function getTransactionIds(uint256 from, uint256 to, bool pending, bool executed) view returns (uint256[] _transactionIds)",
+      "function getConfirmations(uint256 transactionId) view returns (address[] _confirmations)",
+      "function transactionCount() view returns (uint256)",
+      "function changeRequirement(uint256 _required)",
+      "function confirmTransaction(uint256 transactionId)",
+      "function submitTransaction(address destination, uint256 value, bytes data) returns (uint256 transactionId)",
+      "function changeDailyLimit(uint256 _dailyLimit)",
+      "function MAX_OWNER_COUNT() view returns (uint256)",
+      "function required() view returns (uint256)",
+      "function replaceOwner(address owner, address newOwner)",
+      "function executeTransaction(uint256 transactionId)",
+      "function spentToday() view returns (uint256)",
+      "constructor(address[] _owners, uint256 _required, uint256 _dailyLimit)",
+      "event DailyLimitChange(uint256 dailyLimit)",
+      "event Confirmation(address indexed sender, uint256 indexed transactionId)",
+      "event Revocation(address indexed sender, uint256 indexed transactionId)",
+      "event Submission(uint256 indexed transactionId)",
+      "event Execution(uint256 indexed transactionId)",
+      "event ExecutionFailure(uint256 indexed transactionId)",
+      "event Deposit(address indexed sender, uint256 value)",
+      "event OwnerAddition(address indexed owner)",
+      "event OwnerRemoval(address indexed owner)",
+      "event RequirementChange(uint256 required)"
+    ],
+    "0xB9062896ec3A615a4e4444DF183F0531a77218AE": [
+      "constructor(address _masterCopy)"
+    ],
+    "0xbec897d7e4969C59993bfE9ad7b4c571a29Aa381": [
+      "function owners(uint256) view returns (address)",
+      "function removeOwner(address owner)",
+      "function revokeConfirmation(uint256 transactionId)",
+      "function isOwner(address) view returns (bool)",
+      "function confirmations(uint256, address) view returns (bool)",
+      "function calcMaxWithdraw() view returns (uint256)",
+      "function getTransactionCount(bool pending, bool executed) view returns (uint256 count)",
+      "function dailyLimit() view returns (uint256)",
+      "function lastDay() view returns (uint256)",
+      "function addOwner(address owner)",
+      "function isConfirmed(uint256 transactionId) view returns (bool)",
+      "function getConfirmationCount(uint256 transactionId) view returns (uint256 count)",
+      "function transactions(uint256) view returns (address destination, uint256 value, bytes data, bool executed)",
+      "function getOwners() view returns (address[])",
+      "function getTransactionIds(uint256 from, uint256 to, bool pending, bool executed) view returns (uint256[] _transactionIds)",
+      "function getConfirmations(uint256 transactionId) view returns (address[] _confirmations)",
+      "function transactionCount() view returns (uint256)",
+      "function changeRequirement(uint256 _required)",
+      "function confirmTransaction(uint256 transactionId)",
+      "function submitTransaction(address destination, uint256 value, bytes data) returns (uint256 transactionId)",
+      "function changeDailyLimit(uint256 _dailyLimit)",
+      "function MAX_OWNER_COUNT() view returns (uint256)",
+      "function required() view returns (uint256)",
+      "function replaceOwner(address owner, address newOwner)",
+      "function executeTransaction(uint256 transactionId)",
+      "function spentToday() view returns (uint256)",
+      "constructor(address[] _owners, uint256 _required, uint256 _dailyLimit) payable",
+      "event DailyLimitChange(uint256 dailyLimit)",
+      "event Confirmation(address indexed sender, uint256 indexed transactionId)",
+      "event Revocation(address indexed sender, uint256 indexed transactionId)",
+      "event Submission(uint256 indexed transactionId)",
+      "event Execution(uint256 indexed transactionId)",
+      "event ExecutionFailure(uint256 indexed transactionId)",
+      "event Deposit(address indexed sender, uint256 value)",
+      "event OwnerAddition(address indexed owner)",
+      "event OwnerRemoval(address indexed owner)",
+      "event RequirementChange(uint256 required)"
+    ],
+    "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2": [
+      "function name() view returns (string)",
+      "function approve(address guy, uint256 wad) returns (bool)",
+      "function totalSupply() view returns (uint256)",
+      "function transferFrom(address src, address dst, uint256 wad) returns (bool)",
+      "function withdraw(uint256 wad)",
+      "function decimals() view returns (uint8)",
+      "function balanceOf(address) view returns (uint256)",
+      "function symbol() view returns (string)",
+      "function transfer(address dst, uint256 wad) returns (bool)",
+      "function deposit() payable",
+      "function allowance(address, address) view returns (uint256)",
+      "event Approval(address indexed src, address indexed guy, uint256 wad)",
+      "event Transfer(address indexed src, address indexed dst, uint256 wad)",
+      "event Deposit(address indexed dst, uint256 wad)",
+      "event Withdrawal(address indexed src, uint256 wad)"
+    ],
+    "0xC6CDE7C39eB2f0F0095F41570af89eFC2C1Ea828": [
+      "function owners(uint256) view returns (address)",
+      "function removeOwner(address owner)",
+      "function revokeConfirmation(uint256 transactionId)",
+      "function isOwner(address) view returns (bool)",
+      "function confirmations(uint256, address) view returns (bool)",
+      "function getTransactionCount(bool pending, bool executed) view returns (uint256 count)",
+      "function addOwner(address owner)",
+      "function isConfirmed(uint256 transactionId) view returns (bool)",
+      "function getConfirmationCount(uint256 transactionId) view returns (uint256 count)",
+      "function transactions(uint256) view returns (address destination, uint256 value, bytes data, bool executed)",
+      "function getOwners() view returns (address[])",
+      "function getTransactionIds(uint256 from, uint256 to, bool pending, bool executed) view returns (uint256[] _transactionIds)",
+      "function getConfirmations(uint256 transactionId) view returns (address[] _confirmations)",
+      "function transactionCount() view returns (uint256)",
+      "function changeRequirement(uint256 _required)",
+      "function confirmTransaction(uint256 transactionId)",
+      "function submitTransaction(address destination, uint256 value, bytes data) returns (uint256 transactionId)",
+      "function MAX_OWNER_COUNT() view returns (uint256)",
+      "function required() view returns (uint256)",
+      "function replaceOwner(address owner, address newOwner)",
+      "function executeTransaction(uint256 transactionId)",
+      "constructor(address[] _owners, uint256 _required)",
+      "event Confirmation(address indexed sender, uint256 indexed transactionId)",
+      "event Revocation(address indexed sender, uint256 indexed transactionId)",
+      "event Submission(uint256 indexed transactionId)",
+      "event Execution(uint256 indexed transactionId)",
+      "event ExecutionFailure(uint256 indexed transactionId)",
+      "event Deposit(address indexed sender, uint256 value)",
+      "event OwnerAddition(address indexed owner)",
+      "event OwnerRemoval(address indexed owner)",
+      "event RequirementChange(uint256 required)"
+    ],
+    "0xCA06411bd7a7296d7dbdd0050DFc846E95fEBEB7": [
+      "function reclaimToken(address _token)",
+      "function isMerchant(address addr) view returns (bool)",
+      "function callClaimOwnership(address contractToOwn) returns (bool)",
+      "function isCustodian(address addr) view returns (bool)",
+      "function unpause() returns (bool)",
+      "function mint(address to, uint256 amount) returns (bool)",
+      "function burn(uint256 value) returns (bool)",
+      "function callReclaimToken(address ownedContract, address _token) returns (bool)",
+      "function claimOwnership()",
+      "function setFactory(address _factory) returns (bool)",
+      "function getWBTC() view returns (address)",
+      "function renounceOwnership()",
+      "function pause() returns (bool)",
+      "function owner() view returns (address)",
+      "function members() view returns (address)",
+      "function factory() view returns (address)",
+      "function pendingOwner() view returns (address)",
+      "function callTransferOwnership(address ownedContract, address newOwner) returns (bool)",
+      "function transferOwnership(address newOwner)",
+      "function setMembers(address _members) returns (bool)",
+      "function token() view returns (address)",
+      "constructor(address _token)",
+      "event MembersSet(address indexed members)",
+      "event FactorySet(address indexed factory)",
+      "event Paused()",
+      "event Unpaused()",
+      "event CalledTransferOwnership(address ownedContract, address newOwner)",
+      "event CalledClaimOwnership(address contractToOwn)",
+      "event CalledReclaimToken(address ownedContract, address _token)",
+      "event OwnershipRenounced(address indexed previousOwner)",
+      "event OwnershipTransferred(address indexed previousOwner, address indexed newOwner)"
+    ],
+    "0xD4efe33C66B8CdE33B8896a2126E41e5dB571b7e": [
+      "constructor(address token_)",
+      "error AmountOutsideLimit()",
+      "error ConnectorUnavailable()",
       "error InvalidTokenAddress()",
-      "error NoPermit(bytes32 role)",
-      "error OnlyExecutionManager()",
       "error OnlyNominee()",
       "error OnlyOwner()",
-      "error UnequalArrayLengths()",
-      "error WatcherFound()",
-      "error WatcherNotFound()",
       "error ZeroAddress()",
-      "event GlobalTripChanged(bool isGlobalTipped)",
+      "error ZeroAmount()",
+      "event LimitParamsUpdated(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates)",
       "event OwnerClaimed(address indexed claimer)",
       "event OwnerNominated(address indexed nominee)",
-      "event PathTripChanged(uint32 srcChainSlug, bool isPathTripped)",
-      "event ProposalAttested(bytes32 packetId, uint256 proposalCount, bytes32 root, address watcher, uint256 attestationsCount)",
-      "event ProposalTripped(bytes32 packetId, uint256 proposalCount)",
-      "event RoleGranted(bytes32 indexed role, address indexed grantee)",
-      "event RoleRevoked(bytes32 indexed role, address indexed revokee)",
-      "event SocketSet(address newSocket)",
-      "event SwitchboardFeesSet(uint32 siblingChainSlug, tuple(uint128 switchboardFees, uint128 verificationOverheadFees) fees)",
-      "function allowPacket(bytes32 root_, bytes32 packetId_, uint256 proposalCount_, uint32 srcChainSlug_, uint256 proposeTime_) view returns (bool)",
-      "function attest(bytes32 packetId_, uint256 proposalCount_, bytes32 root_, bytes signature_)",
-      "function attestations(bytes32) view returns (uint256)",
-      "function chainSlug() view returns (uint32)",
+      "event PendingTokensTransferred(address connector, address receiver, uint256 unlockedAmount, uint256 pendingAmount)",
+      "event TokensDeposited(address connector, address depositor, address receiver, uint256 depositAmount)",
+      "event TokensPending(address connector, address receiver, uint256 pendingAmount, uint256 totalPendingAmount)",
+      "event TokensUnlocked(address connector, address receiver, uint256 unlockedAmount)",
       "function claimOwner()",
-      "function fees(uint32) view returns (uint128 switchboardFees, uint128 verificationOverheadFees)",
-      "function getMinFees(uint32 dstChainSlug_) view returns (uint128, uint128)",
-      "function grantBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function grantRole(bytes32 role_, address grantee_)",
-      "function grantRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function grantWatcherRole(uint32 srcChainSlug_, address watcher_)",
-      "function hasRole(bytes32 role_, address address_) view returns (bool)",
-      "function hasRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address address_) view returns (bool)",
-      "function initialPacketCount(uint32) view returns (uint256)",
-      "function isAttested(address, bytes32) view returns (bool)",
-      "function isGlobalTipped() view returns (bool)",
-      "function isNonWatcherRole(bytes32 role_) pure returns (bool)",
-      "function isPathTripped(uint32) view returns (bool)",
-      "function isProposalTripped(bytes32, uint256) view returns (bool)",
-      "function isRootValid(bytes32) view returns (bool)",
-      "function nextNonce(address) view returns (uint256)",
+      "function connectorPendingUnlocks(address) view returns (uint256)",
+      "function depositToAppChain(address receiver_, uint256 amount_, uint256 msgGasLimit_, address connector_) payable",
+      "function getCurrentLockLimit(address connector_) view returns (uint256)",
+      "function getCurrentUnlockLimit(address connector_) view returns (uint256)",
+      "function getLockLimitParams(address connector_) view returns (tuple(uint256 lastUpdateTimestamp, uint256 ratePerSecond, uint256 maxLimit, uint256 lastUpdateLimit))",
+      "function getMinFees(address connector_, uint256 msgGasLimit_) view returns (uint256 totalFees)",
+      "function getUnlockLimitParams(address connector_) view returns (tuple(uint256 lastUpdateTimestamp, uint256 ratePerSecond, uint256 maxLimit, uint256 lastUpdateLimit))",
       "function nominateOwner(address nominee_)",
       "function nominee() view returns (address)",
       "function owner() view returns (address)",
-      "function receiveFees(uint32) payable",
-      "function registerSiblingSlug(uint32 siblingChainSlug_, uint256 maxPacketLength_, uint256 capacitorType_, uint256 initialPacketCount_, address siblingSwitchboard_)",
+      "function pendingUnlocks(address, address) view returns (uint256)",
+      "function receiveInbound(bytes payload_)",
       "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
-      "function revokeBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function revokeRole(bytes32 role_, address grantee_)",
-      "function revokeRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function revokeWatcherRole(uint32 srcChainSlug_, address watcher_)",
-      "function setFees(uint256 nonce_, uint32 dstChainSlug_, uint128 switchboardFees_, uint128 verificationOverheadFees_, bytes signature_)",
-      "function signatureVerifier__() view returns (address)",
-      "function socket__() view returns (address)",
-      "function timeoutInSeconds() view returns (uint256)",
-      "function totalWatchers(uint32) view returns (uint256)",
-      "function tripGlobal(uint256 nonce_, bytes signature_)",
-      "function tripPath(uint256 nonce_, uint32 srcChainSlug_, bytes signature_)",
-      "function tripProposal(uint256 nonce_, bytes32 packetId_, uint256 proposalCount_, bytes signature_)",
-      "function unTrip(uint256 nonce_, bytes signature_)",
-      "function unTripPath(uint256 nonce_, uint32 srcChainSlug_, bytes signature_)",
-      "function updateSibling(uint32 siblingChainSlug_, address siblingSwitchboard_)",
-      "function withdrawFees(address withdrawTo_)"
+      "function token__() view returns (address)",
+      "function unlockPendingFor(address receiver_, address connector_)",
+      "function updateLimitParams(tuple(bool isLock, address connector, uint256 maxLimit, uint256 ratePerSecond)[] updates_)"
+    ],
+    "0xd697A61D5FB4e076125e0bE647f902b02bb3A0F1": [
+      "function name() view returns (string)",
+      "function deprecate(address _upgradedAddress)",
+      "function approve(address _spender, uint256 _value)",
+      "function deprecated() view returns (bool)",
+      "function totalSupply() view returns (uint256)",
+      "function transferFrom(address _from, address _to, uint256 _value)",
+      "function upgradedAddress() view returns (address)",
+      "function decimals() view returns (uint256)",
+      "function maximumFee() view returns (uint256)",
+      "function _totalSupply() view returns (uint256)",
+      "function unpause() returns (bool)",
+      "function paused() view returns (bool)",
+      "function balanceOf(address who) view returns (uint256)",
+      "function pause() returns (bool)",
+      "function owner() view returns (address)",
+      "function symbol() view returns (string)",
+      "function transfer(address _to, uint256 _value)",
+      "function setParams(uint256 newBasisPoints, uint256 newMaxFee)",
+      "function issue(uint256 amount)",
+      "function redeem(uint256 amount)",
+      "function allowance(address _owner, address _spender) view returns (uint256 remaining)",
+      "function basisPointsRate() view returns (uint256)",
+      "function transferOwnership(address newOwner)",
+      "constructor(uint256 _initialSupply, string _name, string _symbol, uint256 _decimals)",
+      "event Issue(uint256 amount)",
+      "event Redeem(uint256 amount)",
+      "event Deprecate(address newAddress)",
+      "event Params(uint256 feeBasisPoints, uint256 maxFee)",
+      "event Approval(address indexed owner, address indexed spender, uint256 value)",
+      "event Transfer(address indexed from, address indexed to, uint256 value)",
+      "event Pause()",
+      "event Unpause()"
     ],
     "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552": [
       "constructor()",
@@ -761,73 +2215,117 @@
       "function simulateAndRevert(address targetContract, bytes calldataPayload)",
       "function swapOwner(address prevOwner, address oldOwner, address newOwner)"
     ],
-    "0xdf5f7dfDFc26ee5F629949e330bEf56906319CAe": [
-      "constructor(uint32 chainSlug_, address inbox_, address owner_, address socket_, address bridge_, address outbox_, address signatureVerifier_)",
-      "error AlreadyInitialized()",
-      "error FeesNotEnough()",
-      "error InvalidNonce()",
-      "error InvalidSender()",
-      "error InvalidTokenAddress()",
-      "error NoPermit(bytes32 role)",
-      "error NoRootFound()",
-      "error OnlyExecutionManager()",
-      "error OnlyNominee()",
-      "error OnlyOwner()",
-      "error UnequalArrayLengths()",
-      "error ZeroAddress()",
-      "event GlobalTripChanged(bool isGlobalTipped)",
-      "event InitiatedNativeConfirmation(bytes32 packetId)",
-      "event OwnerClaimed(address indexed claimer)",
-      "event OwnerNominated(address indexed nominee)",
-      "event RoleGranted(bytes32 indexed role, address indexed grantee)",
-      "event RoleRevoked(bytes32 indexed role, address indexed revokee)",
-      "event RootReceived(bytes32 packetId, bytes32 root)",
-      "event SwitchboardFeesSet(uint256 switchboardFees, uint256 verificationOverheadFees)",
-      "event UpdatedBridge(address bridgeAddress)",
-      "event UpdatedInboxAddress(address inbox)",
-      "event UpdatedOutbox(address outboxAddress)",
-      "event UpdatedRemoteNativeSwitchboard(address remoteNativeSwitchboard)",
-      "function allowPacket(bytes32 root_, bytes32 packetId_, uint256, uint32, uint256) view returns (bool)",
-      "function bridge__() view returns (address)",
-      "function capacitor__() view returns (address)",
-      "function chainSlug() view returns (uint32)",
-      "function claimOwner()",
-      "function getMinFees(uint32) view returns (uint128 switchboardFee_, uint128 verificationFee_)",
-      "function grantBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function grantRole(bytes32 role_, address grantee_)",
-      "function grantRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function hasRole(bytes32 role_, address address_) view returns (bool)",
-      "function hasRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address address_) view returns (bool)",
-      "function inbox__() view returns (address)",
-      "function initiateNativeConfirmation(bytes32 packetId_, uint256 maxSubmissionCost_, uint256 maxGas_, uint256 gasPriceBid_, address callValueRefundAddress_, address remoteRefundAddress_) payable",
-      "function isGlobalTipped() view returns (bool)",
-      "function isInitialized() view returns (bool)",
-      "function nextNonce(address) view returns (uint256)",
-      "function nominateOwner(address nominee_)",
-      "function nominee() view returns (address)",
-      "function outbox__() view returns (address)",
+    "0xdAC17F958D2ee523a2206206994597C13D831ec7": [
+      "function name() view returns (string)",
+      "function deprecate(address _upgradedAddress)",
+      "function approve(address _spender, uint256 _value)",
+      "function deprecated() view returns (bool)",
+      "function addBlackList(address _evilUser)",
+      "function totalSupply() view returns (uint256)",
+      "function transferFrom(address _from, address _to, uint256 _value)",
+      "function upgradedAddress() view returns (address)",
+      "function balances(address) view returns (uint256)",
+      "function decimals() view returns (uint256)",
+      "function maximumFee() view returns (uint256)",
+      "function _totalSupply() view returns (uint256)",
+      "function unpause()",
+      "function getBlackListStatus(address _maker) view returns (bool)",
+      "function allowed(address, address) view returns (uint256)",
+      "function paused() view returns (bool)",
+      "function balanceOf(address who) view returns (uint256)",
+      "function pause()",
+      "function getOwner() view returns (address)",
       "function owner() view returns (address)",
-      "function packetIdToRoot(bytes32) view returns (bytes32)",
-      "function receiveFees(uint32) payable",
-      "function receivePacket(bytes32 packetId_, bytes32 root_)",
-      "function registerSiblingSlug(uint32 siblingChainSlug_, uint256 maxPacketLength_, uint256 capacitorType_, uint256 initialPacketCount_, address remoteNativeSwitchboard_)",
-      "function remoteNativeSwitchboard() view returns (address)",
-      "function rescueFunds(address token_, address rescueTo_, uint256 amount_)",
-      "function revokeBatchRole(bytes32[] roleNames_, uint32[] slugs_, address[] grantees_)",
-      "function revokeRole(bytes32 role_, address revokee_)",
-      "function revokeRoleWithSlug(bytes32 roleName_, uint32 chainSlug_, address grantee_)",
-      "function setFees(uint256 nonce_, uint32, uint128 switchboardFees_, uint128 verificationOverheadFees_, bytes signature_)",
-      "function signatureVerifier__() view returns (address)",
-      "function socket__() view returns (address)",
-      "function switchboardFees() view returns (uint128)",
-      "function tripGlobal(uint256 nonce_, bytes signature_)",
-      "function unTrip(uint256 nonce_, bytes signature_)",
-      "function updateBridge(address bridgeAddress_)",
-      "function updateInboxAddresses(address inbox_)",
-      "function updateOutbox(address outboxAddress_)",
-      "function updateSibling(uint32 siblingChainSlug_, address remoteNativeSwitchboard_)",
-      "function verificationOverheadFees() view returns (uint128)",
-      "function withdrawFees(address withdrawTo_)"
+      "function symbol() view returns (string)",
+      "function transfer(address _to, uint256 _value)",
+      "function setParams(uint256 newBasisPoints, uint256 newMaxFee)",
+      "function issue(uint256 amount)",
+      "function redeem(uint256 amount)",
+      "function allowance(address _owner, address _spender) view returns (uint256 remaining)",
+      "function basisPointsRate() view returns (uint256)",
+      "function isBlackListed(address) view returns (bool)",
+      "function removeBlackList(address _clearedUser)",
+      "function MAX_UINT() view returns (uint256)",
+      "function transferOwnership(address newOwner)",
+      "function destroyBlackFunds(address _blackListedUser)",
+      "constructor(uint256 _initialSupply, string _name, string _symbol, uint256 _decimals)",
+      "event Issue(uint256 amount)",
+      "event Redeem(uint256 amount)",
+      "event Deprecate(address newAddress)",
+      "event Params(uint256 feeBasisPoints, uint256 maxFee)",
+      "event DestroyedBlackFunds(address _blackListedUser, uint256 _balance)",
+      "event AddedBlackList(address _user)",
+      "event RemovedBlackList(address _user)",
+      "event Approval(address indexed owner, address indexed spender, uint256 value)",
+      "event Transfer(address indexed from, address indexed to, uint256 value)",
+      "event Pause()",
+      "event Unpause()"
+    ],
+    "0xddD5105b94A647eEa6776B5A63e37D81eAE3566F": [
+      "constructor(address _singleton)"
+    ],
+    "0xe27B57A99e5CAc0E0f16eE0d5D768126B05422A8": [
+      "constructor(address _singleton)"
+    ],
+    "0xe5A5F138005E19A3E6D0FE68b039397EeEf2322b": [
+      "function reclaimToken(address _token)",
+      "function confirmMintRequest(bytes32 requestHash) returns (bool)",
+      "function getMintRequestsLength() view returns (uint256 length)",
+      "function setMerchantBtcDepositAddress(string btcDepositAddress) returns (bool)",
+      "function mintRequests(uint256) view returns (address requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 nonce, uint256 timestamp, uint8 status)",
+      "function burn(uint256 amount) returns (bool)",
+      "function claimOwnership()",
+      "function burnRequests(uint256) view returns (address requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 nonce, uint256 timestamp, uint8 status)",
+      "function setCustodianBtcDepositAddress(address merchant, string btcDepositAddress) returns (bool)",
+      "function renounceOwnership()",
+      "function getBurnRequestsLength() view returns (uint256 length)",
+      "function custodianBtcDepositAddress(address) view returns (string)",
+      "function rejectMintRequest(bytes32 requestHash) returns (bool)",
+      "function owner() view returns (address)",
+      "function addMintRequest(uint256 amount, string btcTxid, string btcDepositAddress) returns (bool)",
+      "function confirmBurnRequest(bytes32 requestHash, string btcTxid) returns (bool)",
+      "function mintRequestNonce(bytes32) view returns (uint256)",
+      "function getMintRequest(uint256 nonce) view returns (uint256 requestNonce, address requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 timestamp, string status, bytes32 requestHash)",
+      "function cancelMintRequest(bytes32 requestHash) returns (bool)",
+      "function burnRequestNonce(bytes32) view returns (uint256)",
+      "function merchantBtcDepositAddress(address) view returns (string)",
+      "function getBurnRequest(uint256 nonce) view returns (uint256 requestNonce, address requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 timestamp, string status, bytes32 requestHash)",
+      "function pendingOwner() view returns (address)",
+      "function transferOwnership(address newOwner)",
+      "function controller() view returns (address)",
+      "constructor(address _controller)",
+      "event CustodianBtcDepositAddressSet(address indexed merchant, address indexed sender, string btcDepositAddress)",
+      "event MerchantBtcDepositAddressSet(address indexed merchant, string btcDepositAddress)",
+      "event MintRequestAdd(uint256 indexed nonce, address indexed requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 timestamp, bytes32 requestHash)",
+      "event MintRequestCancel(uint256 indexed nonce, address indexed requester, bytes32 requestHash)",
+      "event MintConfirmed(uint256 indexed nonce, address indexed requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 timestamp, bytes32 requestHash)",
+      "event MintRejected(uint256 indexed nonce, address indexed requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 timestamp, bytes32 requestHash)",
+      "event Burned(uint256 indexed nonce, address indexed requester, uint256 amount, string btcDepositAddress, uint256 timestamp, bytes32 requestHash)",
+      "event BurnConfirmed(uint256 indexed nonce, address indexed requester, uint256 amount, string btcDepositAddress, string btcTxid, uint256 timestamp, bytes32 inputRequestHash)",
+      "event OwnershipRenounced(address indexed previousOwner)",
+      "event OwnershipTransferred(address indexed previousOwner, address indexed newOwner)"
+    ],
+    "0xE982615d461DD5cD06575BbeA87624fda4e3de17": [
+      "function incrementMinterAllowance(uint256 _allowanceIncrement) returns (bool)",
+      "function setMinterManager(address _newMinterManager)",
+      "function decrementMinterAllowance(uint256 _allowanceDecrement) returns (bool)",
+      "function owner() view returns (address)",
+      "function getMinterManager() view returns (address)",
+      "function getWorker(address _controller) view returns (address)",
+      "function configureController(address _controller, address _worker)",
+      "function configureMinter(uint256 _newAllowance) returns (bool)",
+      "function removeMinter() returns (bool)",
+      "function transferOwnership(address newOwner)",
+      "function removeController(address _controller)",
+      "constructor(address _minterManager)",
+      "event MinterManagerSet(address indexed _oldMinterManager, address indexed _newMinterManager)",
+      "event MinterConfigured(address indexed _msgSender, address indexed _minter, uint256 _allowance)",
+      "event MinterRemoved(address indexed _msgSender, address indexed _minter)",
+      "event MinterAllowanceIncremented(address indexed _msgSender, address indexed _minter, uint256 _increment, uint256 _newAllowance)",
+      "event MinterAllowanceDecremented(address indexed msgSender, address indexed minter, uint256 decrement, uint256 newAllowance)",
+      "event ControllerConfigured(address indexed _controller, address indexed _worker)",
+      "event ControllerRemoved(address indexed _controller)",
+      "event OwnershipTransferred(address previousOwner, address newOwner)"
     ],
     "0xeD037aFBffC65a94E9CC592947E851FB2f730341": [
       "constructor(address owner_, uint32 chainSlug_, address socket_, address signatureVerifier_)",
@@ -956,6 +2454,63 @@
       "function withdrawExecutionFees(uint32 siblingChainSlug_, uint128 amount_, address withdrawTo_)",
       "function withdrawSwitchboardFees(uint32 siblingChainSlug_, address switchboard_, uint128 amount_)",
       "function withdrawTransmissionFees(uint32 siblingChainSlug_, uint128 amount_)"
+    ],
+    "0xfDB77bd17e045B7068cF2172d95Ce824A24Ed980": [
+      "event BatchTransacted(address msgSender, address otherSigner, bytes32 operation)",
+      "event BatchTransfer(address sender, address recipient, uint256 value)",
+      "event Deposited(address from, uint256 value, bytes data)",
+      "event SafeModeActivated(address msgSender)",
+      "event Transacted(address msgSender, address otherSigner, bytes32 operation, address toAddress, uint256 value, bytes data)",
+      "function activateSafeMode()",
+      "function flushForwarderTokens(address forwarderAddress, address tokenContractAddress)",
+      "function getNextSequenceId() view returns (uint256)",
+      "function init(address[] allowedSigners)",
+      "function initialized() view returns (bool)",
+      "function isSigner(address signer) view returns (bool)",
+      "function safeMode() view returns (bool)",
+      "function sendMultiSig(address toAddress, uint256 value, bytes data, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigBatch(address[] recipients, uint256[] values, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function sendMultiSigToken(address toAddress, uint256 value, address tokenContractAddress, uint256 expireTime, uint256 sequenceId, bytes signature)",
+      "function signers(address) view returns (bool)"
+    ],
+    "0xFDF28Bf25779ED4cA74e958d54653260af604C20": [
+      "function owners(uint256) view returns (address)",
+      "function removeOwner(address owner)",
+      "function revokeConfirmation(uint256 transactionId)",
+      "function isOwner(address) view returns (bool)",
+      "function confirmations(uint256, address) view returns (bool)",
+      "function calcMaxWithdraw() view returns (uint256)",
+      "function getTransactionCount(bool pending, bool executed) view returns (uint256 count)",
+      "function dailyLimit() view returns (uint256)",
+      "function lastDay() view returns (uint256)",
+      "function addOwner(address owner)",
+      "function isConfirmed(uint256 transactionId) view returns (bool)",
+      "function getConfirmationCount(uint256 transactionId) view returns (uint256 count)",
+      "function transactions(uint256) view returns (address destination, uint256 value, bytes data, bool executed)",
+      "function getOwners() view returns (address[])",
+      "function getTransactionIds(uint256 from, uint256 to, bool pending, bool executed) view returns (uint256[] _transactionIds)",
+      "function getConfirmations(uint256 transactionId) view returns (address[] _confirmations)",
+      "function transactionCount() view returns (uint256)",
+      "function changeRequirement(uint256 _required)",
+      "function confirmTransaction(uint256 transactionId)",
+      "function submitTransaction(address destination, uint256 value, bytes data) returns (uint256 transactionId)",
+      "function changeDailyLimit(uint256 _dailyLimit)",
+      "function MAX_OWNER_COUNT() view returns (uint256)",
+      "function required() view returns (uint256)",
+      "function replaceOwner(address owner, address newOwner)",
+      "function executeTransaction(uint256 transactionId)",
+      "function spentToday() view returns (uint256)",
+      "constructor(address[] _owners, uint256 _required, uint256 _dailyLimit) payable",
+      "event DailyLimitChange(uint256 dailyLimit)",
+      "event Confirmation(address indexed sender, uint256 indexed transactionId)",
+      "event Revocation(address indexed sender, uint256 indexed transactionId)",
+      "event Submission(uint256 indexed transactionId)",
+      "event Execution(uint256 indexed transactionId)",
+      "event ExecutionFailure(uint256 indexed transactionId)",
+      "event Deposit(address indexed sender, uint256 value)",
+      "event OwnerAddition(address indexed owner)",
+      "event OwnerRemoval(address indexed owner)",
+      "event RequirementChange(uint256 required)"
     ]
   }
 }
