@@ -1,0 +1,764 @@
+{
+  "$schema": "https://raw.githubusercontent.com/l2beat/tools/main/schemas/meta.schema.json",
+  "contracts": [
+    {
+      "name": "USDC lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "USDT lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WBTC lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "USDC.e lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WETH lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Socket",
+      "values": {
+        "capacitorFactory__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "executionManager__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "globalMessageCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "hasher__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transmitManager__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "version": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ClonableBeaconProxy",
+      "values": {}
+    },
+    {
+      "name": "CapacitorFactory",
+      "values": {
+        "maxAllowedPacketLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "minAllowedPacketLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Hasher",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "aeWETH",
+      "values": {
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "DOMAIN_SEPARATOR": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l1Address": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l2Gateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ArbitrumExtension",
+      "values": {
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "DOMAIN_SEPARATOR": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l1Address": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l2Gateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ArbFiatToken",
+      "values": {
+        "blacklister": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "DOMAIN_SEPARATOR": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "gatewayAddress": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l1Address": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "paused": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pauser": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "FiatTokenV2_2",
+      "values": {
+        "admin": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "blacklister": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "CANCEL_AUTHORIZATION_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "currency": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "DOMAIN_SEPARATOR": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "implementation": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "masterMinter": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "paused": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pauser": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "PERMIT_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "RECEIVE_WITH_AUTHORIZATION_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "rescuer": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "TRANSFER_WITH_AUTHORIZATION_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "version": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ExecutionManager",
+      "values": {
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "signatureVerifier__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "socket__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "TransmitManager",
+      "values": {
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "signatureVerifier__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "socket__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ProxyAdmin",
+      "values": {
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MasterMinter",
+      "values": {
+        "getMinterManager": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "SignatureVerifier",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ProxyAdmin",
+      "values": {
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWallet",
+      "values": {
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "L2CustomGateway",
+      "values": {
+        "counterpartGateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "exitNum": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "router": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "L2WethGateway",
+      "values": {
+        "counterpartGateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "exitNum": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l1Weth": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "l2Weth": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "router": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "UpgradeExecutor",
+      "values": {
+        "ADMIN_ROLE": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "DEFAULT_ADMIN_ROLE": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "EXECUTOR_ROLE": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "L2GatewayRouter",
+      "values": {
+        "counterpartGateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "defaultGateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "router": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ProxyAdmin",
+      "values": {
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "L2ERC20Gateway",
+      "values": {
+        "beaconProxyFactory": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "cloneableProxyHash": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "counterpartGateway": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "exitNum": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "router": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "BeaconProxyFactory",
+      "values": {
+        "beacon": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "cloneableProxyHash": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "UpgradeableBeacon",
+      "values": {
+        "implementation": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    }
+  ]
+}

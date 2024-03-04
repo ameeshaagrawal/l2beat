@@ -1,0 +1,1429 @@
+{
+  "$schema": "https://raw.githubusercontent.com/l2beat/tools/main/schemas/meta.schema.json",
+  "contracts": [
+    {
+      "name": "USDT lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WETH lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "USDC lyra Vault",
+      "values": {
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pendingOwner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WBTC lyra Vault",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Socket",
+      "values": {
+        "capacitorFactory__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "executionManager__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "globalMessageCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "hasher__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transmitManager__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "version": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "TetherToken",
+      "values": {
+        "_totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "basisPointsRate": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "deprecated": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_UINT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "maximumFee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "paused": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "upgradedAddress": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ExecutionManager",
+      "values": {
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "signatureVerifier__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "socket__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "CapacitorFactory",
+      "values": {
+        "maxAllowedPacketLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "minAllowedPacketLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "TransmitManager",
+      "values": {
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "signatureVerifier__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "socket__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WETH9",
+      "values": {
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Hasher",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WBTC",
+      "values": {
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "mintingFinished": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "paused": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pendingOwner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "USDCLyraVaultOwner",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getChainId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "FiatTokenV2_2",
+      "values": {
+        "blacklister": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "CANCEL_AUTHORIZATION_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "currency": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "DOMAIN_SEPARATOR": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "masterMinter": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "paused": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pauser": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "PERMIT_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "RECEIVE_WITH_AUTHORIZATION_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "rescuer": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "TRANSFER_WITH_AUTHORIZATION_TYPEHASH": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "version": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Controller",
+      "values": {
+        "factory": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getWBTC": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "members": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pendingOwner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "token": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MasterMinter",
+      "values": {
+        "getMinterManager": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "SignatureVerifier",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWallet",
+      "values": {
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "TetherToken",
+      "values": {
+        "_totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "basisPointsRate": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "decimals": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "deprecated": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "maximumFee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "name": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "paused": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "symbol": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "totalSupply": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "upgradedAddress": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Members",
+      "values": {
+        "custodian": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getMerchants": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pendingOwner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getMerchant": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "values": {
+        "calcMaxWithdraw": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "dailyLimit": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "lastDay": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "spentToday": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Factory",
+      "values": {
+        "controller": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getBurnRequestsLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getMintRequestsLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "pendingOwner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "burnRequests": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getBurnRequest": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getMintRequest": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "mintRequests": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WalletSimple",
+      "values": {
+        "getNextSequenceId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "initialized": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "safeMode": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WalletSimple",
+      "values": {
+        "getNextSequenceId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "initialized": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "safeMode": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WalletSimple",
+      "values": {
+        "getNextSequenceId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "initialized": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "safeMode": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "WalletSimple",
+      "values": {
+        "getNextSequenceId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "initialized": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "safeMode": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "values": {
+        "calcMaxWithdraw": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "dailyLimit": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "lastDay": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "spentToday": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getModules": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "NAME": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getChainId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getChainId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "values": {
+        "calcMaxWithdraw": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "dailyLimit": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "lastDay": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "spentToday": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getChainId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "values": {
+        "calcMaxWithdraw": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "dailyLimit": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "lastDay": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "spentToday": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "MultiSigWalletWithDailyLimit",
+      "values": {
+        "calcMaxWithdraw": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "dailyLimit": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "lastDay": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "MAX_OWNER_COUNT": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "required": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "spentToday": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactionCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmationCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getConfirmations": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "isConfirmed": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transactions": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "GnosisSafe",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getModules": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "NAME": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "",
+      "values": {}
+    },
+    {
+      "name": "",
+      "values": {}
+    },
+    {
+      "name": "",
+      "values": {}
+    },
+    {
+      "name": "",
+      "values": {}
+    },
+    {
+      "name": "GnosisSafe",
+      "values": {
+        "domainSeparator": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getChainId": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getOwners": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "getThreshold": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nonce": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "VERSION": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "",
+      "values": {}
+    },
+    {
+      "name": "",
+      "values": {}
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "$schema": "https://raw.githubusercontent.com/l2beat/tools/main/schemas/meta.schema.json",
+  "contracts": [
+    {
+      "name": "Socket",
+      "values": {
+        "capacitorFactory__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "executionManager__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "globalMessageCount": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "hasher__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "transmitManager__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "version": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "TransmitManager",
+      "values": {
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "signatureVerifier__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "socket__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "Hasher",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "ExecutionManager",
+      "values": {
+        "chainSlug": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "signatureVerifier__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "socket__": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "CapacitorFactory",
+      "values": {
+        "maxAllowedPacketLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "minAllowedPacketLength": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    },
+    {
+      "name": "SignatureVerifier",
+      "values": {
+        "nominee": {
+          "description": null,
+          "severity": null,
+          "type": null
+        },
+        "owner": {
+          "description": null,
+          "severity": null,
+          "type": null
+        }
+      }
+    }
+  ]
+}
